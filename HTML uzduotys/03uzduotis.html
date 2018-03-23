@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Šachmatų lenta</title>
     <meta charset="UTF-8">
     <style>
         table {
             width: 25%;
+            position: absolute;   /*keist lentos padėtį naršyklėje */
+            top: 25%;
+            bottom: 0%;
+            left: 35%;
+            right: 0%;
+            border: 2px solid black;
         }
 
         td.juodas {
-            width: 12.5%;
-            background-color: black;
+            width: 11%;
+            background-color: brown;
         }
 
         td.juodas:after {
@@ -21,7 +28,7 @@
         }
 
         td.pilkas {
-            width: 12.5%;
+            width: 11%;
             background-color: gray;
         }
 
@@ -31,14 +38,37 @@
             margin-bottom: 100%;
 
         }
+
+        td.simboliams {
+            width: 5.5%;
+            background-color: brown;
+        }
+
+        td.simboliams:after {
+            /* content: '';  */
+            display: block;
+            margin-bottom: 100%;
+        }
     </style>
 </head>
 
 <body>
     <table>
+            <tr>
+                    <td class="simboliams" align="center"></td>
+                    <td class="simboliams" align="center">A</td>
+                    <td class="simboliams" align="center">B</td>
+                    <td class="simboliams" align="center">C</td>
+                    <td class="simboliams" align="center">D</td>
+                    <td class="simboliams" align="center">E</td>
+                    <td class="simboliams" align="center">F</td>
+                    <td class="simboliams" align="center">G</td>
+                    <td class="simboliams" align="center">H</td>
+                    <td class="simboliams" align="center"></td>
+                </tr>
 
         <tr>
-
+            <td class="simboliams" align="center">1</td>
             <td class="juodas"></td>
             <td class="pilkas"></td>
             <td class="juodas"></td>
@@ -47,10 +77,11 @@
             <td class="pilkas"></td>
             <td class="juodas"></td>
             <td class="pilkas"></td>
-
+            <td class="simboliams" align="center">1</td>
 
         </tr>
         <tr>
+            <td class="simboliams" align="center">2</td>
             <td class="pilkas"></td>
             <td class="juodas"></td>
             <td class="pilkas"></td>
@@ -59,9 +90,10 @@
             <td class="juodas"></td>
             <td class="pilkas"></td>
             <td class="juodas"></td>
+            <td class="simboliams" align="center">2</td>
         </tr>
         <tr>
-
+            <td class="simboliams" align="center">3</td>
             <td class="juodas"></td>
             <td class="pilkas"></td>
             <td class="juodas"></td>
@@ -70,33 +102,11 @@
             <td class="pilkas"></td>
             <td class="juodas"></td>
             <td class="pilkas"></td>
-
-
-        </tr>
-        <tr>
-            <td class="pilkas"></td>
-            <td class="juodas"></td>
-            <td class="pilkas"></td>
-            <td class="juodas"></td>
-            <td class="pilkas"></td>
-            <td class="juodas"></td>
-            <td class="pilkas"></td>
-            <td class="juodas"></td>
-        </tr>
-        <tr>
-
-            <td class="juodas"></td>
-            <td class="pilkas"></td>
-            <td class="juodas"></td>
-            <td class="pilkas"></td>
-            <td class="juodas"></td>
-            <td class="pilkas"></td>
-            <td class="juodas"></td>
-            <td class="pilkas"></td>
-
+            <td class="simboliams" align="center">3</td>
 
         </tr>
         <tr>
+            <td class="simboliams" align="center">4</td>
             <td class="pilkas"></td>
             <td class="juodas"></td>
             <td class="pilkas"></td>
@@ -105,9 +115,10 @@
             <td class="juodas"></td>
             <td class="pilkas"></td>
             <td class="juodas"></td>
+            <td class="simboliams" align="center">4</td>
         </tr>
         <tr>
-
+            <td class="simboliams" align="center">5</td>
             <td class="juodas"></td>
             <td class="pilkas"></td>
             <td class="juodas"></td>
@@ -116,10 +127,11 @@
             <td class="pilkas"></td>
             <td class="juodas"></td>
             <td class="pilkas"></td>
-
+            <td class="simboliams" align="center">5</td>
 
         </tr>
         <tr>
+            <td class="simboliams" align="center">6</td>
             <td class="pilkas"></td>
             <td class="juodas"></td>
             <td class="pilkas"></td>
@@ -128,6 +140,44 @@
             <td class="juodas"></td>
             <td class="pilkas"></td>
             <td class="juodas"></td>
+            <td class="simboliams" align="center">6</td>
+        </tr>
+        <tr>
+            <td class="simboliams" align="center">7</td>
+            <td class="juodas"></td>
+            <td class="pilkas"></td>
+            <td class="juodas"></td>
+            <td class="pilkas"></td>
+            <td class="juodas"></td>
+            <td class="pilkas"></td>
+            <td class="juodas"></td>
+            <td class="pilkas"></td>
+            <td class="simboliams" align="center">7</td>
+
+        </tr>
+        <tr>
+            <td class="simboliams" align="center">8</td>
+            <td class="pilkas"></td>
+            <td class="juodas"></td>
+            <td class="pilkas"></td>
+            <td class="juodas"></td>
+            <td class="pilkas"></td>
+            <td class="juodas"></td>
+            <td class="pilkas"></td>
+            <td class="juodas"></td>
+            <td class="simboliams" align="center">8</td>
+        </tr>
+        <tr>
+            <td class="simboliams" align="center"></td>
+            <td class="simboliams" align="center">A</td>
+            <td class="simboliams" align="center">B</td>
+            <td class="simboliams" align="center">C</td>
+            <td class="simboliams" align="center">D</td>
+            <td class="simboliams" align="center">E</td>
+            <td class="simboliams" align="center">F</td>
+            <td class="simboliams" align="center">G</td>
+            <td class="simboliams" align="center">H</td>
+            <td class="simboliams" align="center"></td>
         </tr>
 
 
