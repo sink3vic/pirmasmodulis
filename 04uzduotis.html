@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <style>
+        .container {
+            width: 100%;
+            background-color: cornflowerblue;
+            margin: 10px;                       /*<------------kodėl nėra margin dešinėje pusėje????*/
+         
+        }
+
+        .block {
+            width: 25vmin;
+            height: 25vmin;
+            background-color: blue;
+            position: relative;
+            margin: 5px;
+        }
+
+        .strocked {
+            border: 5px solid black;
+        }
+
+        .rectangle {
+            width: 60vmin;
+            height: 25vmin;
+            background-color: purple;
+            margin: 10px;
+            border: 0px solid black;
+        }
+
+        div.rectangle>div.block {
+            background-color: red;
+            margin: 0px;
+        }
+
+        div.block+div.block {
+            border-bottom: 12.5vmin solid cornflowerblue;
+        }
+
+        div.rectangle+div.rectangle {
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+    <div class="block strocked"></div>
+    <div class="rectangle">
+        <div class="block"></div>
+    </div>
+    <div class="rectangle strocked"></div>
+</body>
+
+</html>
