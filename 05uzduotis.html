@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>04uzduotis</title>
+    <style>
+        div {
+            margin-bottom: 4px;
+        }
+
+        .virsus {
+            height: 2em;
+        }
+
+        .vidurys {
+            height: calc(99vh - 4em - 4px);
+        }
+
+        .apacia {
+            background-color: lightgreen;
+            height: 2em;
+        }
+
+        div>div>div {
+            display: inline-block;
+            height: 2em;
+        }
+
+        div.A {
+            background-color: green;
+            width: calc(74% + 4px);
+        }
+
+        div.B {
+            background-color: green;
+            width: 25%;
+        }
+
+        div.vidurioleft {
+            background-color: yellow;
+            width: 24%;
+            height: 100%;
+        }
+
+        div.viduriomiddle {
+            background-color: purple;
+            width: 50%;
+            height: 100%;
+        }
+
+        div.vidurioright {
+            background-color: red;
+            width: 25%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="virsus">
+            <div class="A">A</div>
+            <div class="B">B</div>
+        </div>
+        <div class="vidurys">
+            <div class="vidurioleft">C</div>
+            <div class="viduriomiddle">
+                <div>D</div>
+                <div>E</div>
+                <div>G</div>
+            </div>
+            <div class="vidurioright">E</div>
+        </div>
+        <div class="apacia"></div>
+    </div>
+</body>
+
+</html>
