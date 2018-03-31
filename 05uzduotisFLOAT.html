@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>05uzduotisFLOAT</title>
+    <style>
+        body {
+            padding: 4px;
+            margin: 0;
+        }
+
+        header {
+            height: 2em;
+            margin-bottom: 4px;
+        }
+
+        footer {
+            border: 2px solid black;
+            height: 2em;
+            margin-top: 4px;
+            background-color:lightblue;
+        }
+
+        header div {
+            border: 2px solid black;
+            float: left;
+            background-color: green;
+        }
+
+        #vidurys {
+            /* background-color: red; */
+            height: calc(100vh - 4em - 8px - 16px);
+        }
+
+        #A {
+            width: calc(75% - 4px - 4px);
+            height: calc(2em - 4px);
+            border: 2px solid black;
+            margin-right: 4px;
+                
+        }
+
+        #B {
+            width: calc(25% - 4px);
+            height: calc(2em - 4px);
+            border: 2px solid black;
+
+        }
+
+        div div {
+            float: left;
+            border: 2px solid black;
+        }
+        div div div {
+            clear: both;
+            border: 2px solid black;
+        }
+
+        #C {
+            height:calc(100% - 4px);
+            width:calc(25% - 4px - 4px);
+            margin-right: 4px;
+            background-color:yellow;
+            overflow:auto;
+        }
+        #vidurioMID {
+            height: 2em; 
+            height:calc(100%);
+            width:calc(50% - 4px);
+            margin-right: 4px;
+            border:0;
+        }
+        #vidurioRIGHT {
+            height:calc(100%);
+            width:calc(25%);
+            border:0;
+        }
+        .vienodi{
+            width:calc(100% - 4px);
+            height:2em;
+            margin-bottom:4px;
+        }
+        .uzpildo{
+            width:calc(100% - 4px);
+            height:calc(100% - 4em - 12px - 8px);
+            overflow:auto;
+        }
+        #F{
+            width:calc(100% - 4px);
+            height:calc(4em + 8px);
+            margin-bottom: 4px;
+        }
+        #H{
+            width:calc(100% - 4px);
+            height:calc(100% - 4em - 12px - 8px);
+            overflow:auto;
+        }
+        #vidurioMID div{
+            background-color:blue;
+        }
+        #vidurioRIGHT div{
+            background-color:red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="A">A</div>
+        <div id="B">B</div>
+    </header>
+    <div id="vidurys">
+        <div id="C">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mattis, orci ut consequat gravida, mi eros sodales magna, ac gravida elit enim id enim. Proin nec interdum leo, eu hendrerit ipsum. Etiam dictum mi ex, at fermentum ipsum ultrices finibus. Nam eget lectus euismod, facilisis enim ut, mollis mauris. Pellentesque ultricies consequat tellus, id hendrerit magna posuere sit amet. Phasellus quis velit ut nisi porta fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat lacus id cursus elementum. Nunc quis sollicitudin sem. Phasellus pretium fermentum ex rhoncus efficitur. Suspendisse feugiat turpis eu purus tristique iaculis. Mauris quam metus, consectetur in iaculis quis, tempus sed sapien. Etiam eleifend aliquet ipsum non elementum.
+
+                Etiam sed sem vel purus sollicitudin malesuada. Duis dictum fermentum est eget rhoncus. Maecenas accumsan mi nisi, vel pulvinar dolor euismod sed. Suspendisse viverra, diam in maximus aliquam, quam lectus placerat neque, eget convallis massa odio et libero. Duis ac nunc neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere consectetur leo, at molestie tellus gravida a. Nullam commodo pretium malesuada. Mauris varius consectetur mauris eget congue. Aliquam sollicitudin molestie porta. Aliquam efficitur nulla tortor, ac vehicula sem finibus non.
+                
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris a velit venenatis, laoreet massa eget, fermentum magna. Maecenas ut dapibus justo. Proin tempor lacus nec purus auctor, eu pretium dolor porta. Nunc nec lorem tellus. Curabitur a tortor iaculis nunc consectetur pellentesque nec eu enim. Praesent non dolor posuere, ullamcorper felis eu, consectetur orci. Sed pretium est eget ipsum iaculis tristique. Duis vulputate ex lectus, nec pharetra sapien maximus ut. Donec commodo enim eget scelerisque ultrices. Morbi pulvinar mattis dolor ac aliquet. Ut eleifend, diam eget imperdiet pulvinar, nulla diam congue arcu, sit amet volutpat nisl orci ut mi. Sed quis aliquet nulla. Quisque ac odio mi.</div>
+        <div id="vidurioMID">
+            <div class="vienodi">D</div>
+            <div class="vienodi">E</div>
+            <div class="uzpildo">Phasellus vitae dictum libero. Aliquam erat volutpat. Aliquam pulvinar, ipsum sit amet bibendum venenatis, dui augue efficitur ligula, sed euismod urna massa vel mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc posuere convallis volutpat. Proin quis nulla lacus. Praesent in imperdiet diam. Fusce quis metus interdum, tincidunt purus eu, euismod lacus. Donec quam justo, dapibus at vehicula eget, fermentum in quam. Integer a ex ipsum. Nam nunc felis, sagittis vitae quam at, consectetur volutpat magna.
+
+                    Etiam ultrices porttitor enim, quis malesuada dolor fermentum at. Vivamus mollis, leo et dictum posuere, lorem lacus scelerisque nunc, sed condimentum nisi diam at libero. Sed sodales dignissim eros. Pellentesque bibendum purus vel est finibus, vel varius justo laoreet. In ut mi eget dolor vulputate gravida vel non libero. Donec feugiat posuere pulvinar. Maecenas lacus arcu, mattis tincidunt imperdiet nec, iaculis eget leo. Proin semper elit eget ligula auctor maximus. Nunc mollis convallis mattis.Phasellus vitae dictum libero. Aliquam erat volutpat. Aliquam pulvinar, ipsum sit amet bibendum venenatis, dui augue efficitur ligula, sed euismod urna massa vel mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc posuere convallis volutpat. Proin quis nulla lacus. Praesent in imperdiet diam. Fusce quis metus interdum, tincidunt purus eu, euismod lacus. Donec quam justo, dapibus at vehicula eget, fermentum in quam. Integer a ex ipsum. Nam nunc felis, sagittis vitae quam at, consectetur volutpat magna.
+
+                    Etiam ultrices porttitor enim, quis malesuada dolor fermentum at. Vivamus mollis, leo et dictum posuere, lorem lacus scelerisque nunc, sed condimentum nisi diam at libero. Sed sodales dignissim eros. Pellentesque bibendum purus vel est finibus, vel varius justo laoreet. In ut mi eget dolor vulputate gravida vel non libero. Donec feugiat posuere pulvinar. Maecenas lacus arcu, mattis tincidunt imperdiet nec, iaculis eget leo. Proin semper elit eget ligula auctor maximus. Nunc mollis convallis mattis.Phasellus vitae dictum libero. Aliquam erat volutpat. Aliquam pulvinar, ipsum sit amet bibendum venenatis, dui augue efficitur ligula, sed euismod urna massa vel mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc posuere convallis volutpat. Proin quis nulla lacus. Praesent in imperdiet diam. Fusce quis metus interdum, tincidunt purus eu, euismod lacus. Donec quam justo, dapibus at vehicula eget, fermentum in quam. Integer a ex ipsum. Nam nunc felis, sagittis vitae quam at, consectetur volutpat magna.
+
+                    Etiam ultrices porttitor enim, quis malesuada dolor fermentum at. Vivamus mollis, leo et dictum posuere, lorem lacus scelerisque nunc, sed condimentum nisi diam at libero. Sed sodales dignissim eros. Pellentesque bibendum purus vel est finibus, vel varius justo laoreet. In ut mi eget dolor vulputate gravida vel non libero. Donec feugiat posuere pulvinar. Maecenas lacus arcu, mattis tincidunt imperdiet nec, iaculis eget leo. Proin semper elit eget ligula auctor maximus. Nunc mollis convallis mattis.Phasellus vitae dictum libero. Aliquam erat volutpat. Aliquam pulvinar, ipsum sit amet bibendum venenatis, dui augue efficitur ligula, sed euismod urna massa vel mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc posuere convallis volutpat. Proin quis nulla lacus. Praesent in imperdiet diam. Fusce quis metus interdum, tincidunt purus eu, euismod lacus. Donec quam justo, dapibus at vehicula eget, fermentum in quam. Integer a ex ipsum. Nam nunc felis, sagittis vitae quam at, consectetur volutpat magna.
+
+                    Etiam ultrices porttitor enim, quis malesuada dolor fermentum at. Vivamus mollis, leo et dictum posuere, lorem lacus scelerisque nunc, sed condimentum nisi diam at libero. Sed sodales dignissim eros. Pellentesque bibendum purus vel est finibus, vel varius justo laoreet. In ut mi eget dolor vulputate gravida vel non libero. Donec feugiat posuere pulvinar. Maecenas lacus arcu, mattis tincidunt imperdiet nec, iaculis eget leo. Proin semper elit eget ligula auctor maximus. Nunc mollis convallis mattis.Phasellus vitae dictum libero. Aliquam erat volutpat. Aliquam pulvinar, ipsum sit amet bibendum venenatis, dui augue efficitur ligula, sed euismod urna massa vel mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc posuere convallis volutpat. Proin quis nulla lacus. Praesent in imperdiet diam. Fusce quis metus interdum, tincidunt purus eu, euismod lacus. Donec quam justo, dapibus at vehicula eget, fermentum in quam. Integer a ex ipsum. Nam nunc felis, sagittis vitae quam at, consectetur volutpat magna.
+
+                    Etiam ultrices porttitor enim, quis malesuada dolor fermentum at. Vivamus mollis, leo et dictum posuere, lorem lacus scelerisque nunc, sed condimentum nisi diam at libero. Sed sodales dignissim eros. Pellentesque bibendum purus vel est finibus, vel varius justo laoreet. In ut mi eget dolor vulputate gravida vel non libero. Donec feugiat posuere pulvinar. Maecenas lacus arcu, mattis tincidunt imperdiet nec, iaculis eget leo. Proin semper elit eget ligula auctor maximus. Nunc mollis convallis mattis.</div>    
+        </div>
+        <div id="vidurioRIGHT">
+            <div id="F">F</div>
+            <div id="H">Aenean tristique ullamcorper augue a egestas. Proin leo orci, gravida quis neque eget, rhoncus interdum lacus. Cras lorem justo, volutpat eu ex mollis, faucibus porta turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tempor neque tortor, sit amet eleifend ligula hendrerit vitae. Aenean quis neque ultricies, ullamcorper leo nec, ultrices quam. Aliquam vitae mi nunc. Sed metus turpis, scelerisque ac massa eu, hendrerit tristique velit. Nam rhoncus, justo sed efficitur dapibus, nisi ex aliquet urna, ac semper justo erat a tellus. Nunc sagittis magna sapien, sed elementum neque ullamcorper sit amet. Nullam maximus, eros et gravida porta, nulla neque iaculis tortor, non vulputate enim massa quis orci. Sed efficitur enim massa. Suspendisse non nunc eget justo feugiat dignissim vel vitae nisi. Nullam magna nisl, vehicula quis ante ac, rutrum eleifend dolor. Praesent aliquam fermentum turpis id facilisis.
+
+                    In hac habitasse platea dictumst. Proin dignissim vehicula feugiat. Etiam a sem in tellus tempus luctus. Donec vel metus ornare, elementum dolor sit amet, finibus urna. Nulla libero elit, varius eget interdum id, lacinia sed enim. Mauris ut sapien ullamcorper, consectetur orci at, ornare eros. Aliquam efficitur ut erat sit amet consequat. Ut eget ex feugiat, interdum libero nec, posuere ex. Nulla sed erat turpis. Mauris porta arcu velit, at porta ante sagittis at.
+                    
+                    Quisque lobortis cursus sapien, at volutpat ipsum sollicitudin ac. Integer id varius diam. Vestibulum tincidunt eu odio vel laoreet. Nam feugiat felis ex, nec gravida dolor dapibus ac. Aenean suscipit hendrerit libero, in pulvinar leo congue ut. Quisque pellentesque sit amet ante vel imperdiet. Nullam vel scelerisque erat. Etiam sed dolor libero. Cras egestas libero in dui aliquet pharetra. Proin et fringilla libero. Proin rhoncus sodales elit at tempus.
+                    
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam faucibus tellus ultricies magna tempor euismod. Suspendisse lacinia est sit amet mattis tristique. Praesent commodo eleifend tortor consectetur scelerisque. Nullam tempus, nisl facilisis iaculis tristique, augue leo facilisis enim, non lacinia urna lorem ut lorem. Phasellus at ante non velit egestas varius ac non nisl. Fusce posuere iaculis lobortis. Suspendisse accumsan nibh sed porta tincidunt. Curabitur dapibus, massa non semper finibus, nulla tortor imperdiet diam, eget semper enim orci et mi. Praesent imperdiet est in dui pellentesque, at pharetra lorem sollicitudin. Curabitur at aliquam magna. Etiam cursus in nisi in commodo. In nec lacus a dolor ultricies ullamcorper. Donec sapien felis, tincidunt non pharetra iaculis, aliquam ac eros. Sed orci tortor, bibendum nec finibus eget, aliquet id lorem. Vivamus tempor metus quis leo hendrerit facilisis.</div>    
+        </div>
+    </div>
+    <footer>apacia</footer>
+</body>
+
+</html>
