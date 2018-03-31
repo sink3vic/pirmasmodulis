@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>klasej05</title>
+    <style>
+        body{
+            background-color:yellow;
+            padding:4px;
+            margin:0;
+        }
+        div, header, footer{
+            border:1px solid black;
+        }
+        header, footer {
+            height:2em;
+        }
+        #b{
+            height: calc(100vh - 4em - 8px - 6px);
+        }
+        #b div {
+            display:inline-block;
+            height:100%;
+            vertical-align: top;
+        }
+        #k, #d {
+            width:25%;
+        }
+        #v {
+            width:calc(50% - 6px); 
+        }
+        #k {
+            overflow:hidden;
+        }
+    </style>
+</head>
+
+<body>
+     <header>virsus</header> <!-- galima naudot ir header footer, arba id="a/b/c.." -->
+    <div id="b">
+        <div id="k">kaire</div><div id="v">vidurys</div><div id="d">desine</div>    
+    </div>
+    <footer>apacia</footer>
+
+</body>
+
+</html>

@@ -7,21 +7,23 @@
     <style>
         table {
             
-            width: 25%; /*vmin paima minimalią kraštinę, ir jos ilgio procentą paima */
-
+            width: 70vmin; /*vmin paima minimalią naršyklės kraštinę, ir jos ilgio procentą paima */
+            height: 70vmin;
+            margin:0 auto;
             /* pasinaudot box modelio.pdf elementais, kad sukurt skirtingo  dydžio kvadratus!!!!
              (pirmas ir paskutinis tevo elementas)
              borderius uždėt td (th gal) elementams
              table-layout:fixed į table klasę
              td:not(:first-child)*/
 
-            height: 45%;
-            position: absolute;
-            /*keist lentos padėtį naršyklėje */
-            top: 200px;
-            bottom: 0%;
-            left: 330px;
-            right: 0%;
+
+            /* Rytoj darau--->>šitą sutvarkau, kad būtų su div viduje šachmatų langelių - reiks vėliau, kai 
+            animacijos veiks||
+            Šachmatų lentą būtų gerai padaryt su div */
+
+              /*dabar turiu skaidres apie poziciją ir turėčiau surast kokį parinkt,
+            šiaip position reikšmė reikalinga, kad pasirinktum "koordinačių ašies nulį" */
+
             /* border: 2px solid black;   */    /* <------- LANGELIS APSIVERČIA KARTU SU RĖMELIU */
             border-collapse: collapse;
         }
@@ -42,8 +44,10 @@
         }
 
 
+        /* čia geriau panaudot pirmus/paskutinius/lyginius/nelyginius tėvinio elemento vaikus - nereiks tiek
+        klasių daug */
 
-        td.simboliamsvertikalus {
+        td.simboliamsvertikalus {           
             width: 5.5%;
             height: 11%;
             background-color: brown;
@@ -68,10 +72,17 @@
             height: 5.5%;
             background-color: brown;
         }
+        div {
+            font-size: 5vmin;
+        }
     </style>
+    
 </head>
 
 <body>
+
+    <!-- čia su body turėtų būt daugmaž gerai  -->
+
     <table>
         <tr>
             <td class="simboliukampai" align="center"></td>
@@ -88,102 +99,102 @@
 
         <tr>
             <td class="simboliamsvertikalus" align="center">1</td>
-            <td class="juodas">&#9820;</td>
-            <td class="rudas">&#9822;</td>
-            <td class="juodas">&#9821;</td>
-            <td class="rudas">&#9818;</td>
-            <td class="juodas">&#9819;</td>
-            <td class="rudas">&#9821;</td>
-            <td class="juodas">&#9822;</td>
-            <td class="rudas">&#9820;</td>
+            <td class="juodas"><div>&#9820;</div></td>
+            <td class="rudas"><div>&#9822;</div></td>
+            <td class="juodas"><div>&#9821;</div></td>
+            <td class="rudas"><div>&#9818;</div></td>
+            <td class="juodas"><div>&#9819;</div></td>
+            <td class="rudas"><div>&#9821;</div></td>
+            <td class="juodas"><div>&#9822;</div></td>
+            <td class="rudas"><div>&#9820;</div></td>
             <td class="simboliamsvertikalus" align="center">1</td>
 
         </tr>
         <tr>
             <td class="simboliamsvertikalus" align="center">2</td>
-            <td class="rudas">&#9823;</td>
-            <td class="juodas">&#9823;</td>
-            <td class="rudas">&#9823;</td>
-            <td class="juodas">&#9823;</td>
-            <td class="rudas">&#9823;</td>
-            <td class="juodas">&#9823;</td>
-            <td class="rudas">&#9823;</td>
-            <td class="juodas">&#9823;</td>
+            <td class="rudas"><div>&#9823;</div></td>
+            <td class="juodas"><div>&#9823;</div></td>
+            <td class="rudas"><div>&#9823;</div></td>
+            <td class="juodas"><div>&#9823;</div></td>
+            <td class="rudas"><div>&#9823;</div></td>
+            <td class="juodas"><div>&#9823;</div></td>
+            <td class="rudas"><div>&#9823;</div></td>
+            <td class="juodas"><div>&#9823;</div></td>
             <td class="simboliamsvertikalus" align="center">2</td>
         </tr>
         <tr>
             <td class="simboliamsvertikalus" align="center">3</td>
-            <td class="juodas"></td>
-            <td class="rudas"></td>
-            <td class="juodas"></td>
-            <td class="rudas"></td>
-            <td class="juodas"></td>
-            <td class="rudas"></td>
-            <td class="juodas"></td>
-            <td class="rudas"></td>
+            <td class="juodas"><div></div></td>
+            <td class="rudas"><div></div></td>
+            <td class="juodas"><div></div></td>
+            <td class="rudas"><div></div></td>
+            <td class="juodas"><div></div></td>
+            <td class="rudas"><div></div></td>
+            <td class="juodas"><div></div></td>
+            <td class="rudas"><div></div></td>
             <td class="simboliamsvertikalus" align="center">3</td>
 
         </tr>
         <tr>
             <td class="simboliamsvertikalus" align="center">4</td>
-            <td class="rudas"></td>
-            <td class="juodas"></td>
-            <td class="rudas"></td>
-            <td class="juodas"></td>
-            <td class="rudas"></td>
-            <td class="juodas"></td>
-            <td class="rudas"></td>
-            <td class="juodas"></td>
+            <td class="rudas"><div></div></td>
+            <td class="juodas"><div></div></td>
+            <td class="rudas"><div></div></td>
+            <td class="juodas"><div></div></td>
+            <td class="rudas"><div></div></td>
+            <td class="juodas"><div></div></td>
+            <td class="rudas"><div></div></td>
+            <td class="juodas"><div></div></td>
             <td class="simboliamsvertikalus" align="center">4</td>
         </tr>
         <tr>
             <td class="simboliamsvertikalus" align="center">5</td>
-            <td class="juodas"></td>
-            <td class="rudas"></td>
-            <td class="juodas"></td>
-            <td class="rudas"></td>
-            <td class="juodas"></td>
-            <td class="rudas"></td>
-            <td class="juodas"></td>
-            <td class="rudas"></td>
+            <td class="juodas"><div></div></td>
+            <td class="rudas"><div></div></td>
+            <td class="juodas"><div></div></td>
+            <td class="rudas"><div></div></td>
+            <td class="juodas"><div></div></td>
+            <td class="rudas"><div></div></td>
+            <td class="juodas"><div></div></td>
+            <td class="rudas"><div></div></td>
             <td class="simboliamsvertikalus" align="center">5</td>
 
         </tr>
         <tr>
             <td class="simboliamsvertikalus" align="center">6</td>
-            <td class="rudas"></td>
-            <td class="juodas"></td>
-            <td class="rudas"></td>
-            <td class="juodas"></td>
-            <td class="rudas"></td>
-            <td class="juodas"></td>
-            <td class="rudas"></td>
-            <td class="juodas"></td>
+            <td class="rudas"><div></div></td>
+            <td class="juodas"><div></div></td>
+            <td class="rudas"><div></div></td>
+            <td class="juodas"><div></div></td>
+            <td class="rudas"><div></div></td>
+            <td class="juodas"><div></div></td>
+            <td class="rudas"><div></div></td>
+            <td class="juodas"><div></div></td>
             <td class="simboliamsvertikalus" align="center">6</td>
         </tr>
         <tr>
             <td class="simboliamsvertikalus" align="center">7</td>
-            <td class="juodas">&#9817;</td>
-            <td class="rudas">&#9817;</td>
-            <td class="juodas">&#9817;</td>
-            <td class="rudas">&#9817;</td>
-            <td class="juodas">&#9817;</td>
-            <td class="rudas">&#9817;</td>
-            <td class="juodas">&#9817;</td>
-            <td class="rudas">&#9817;</td>
+            <td class="juodas"><div>&#9817;</div></td>
+            <td class="rudas"><div>&#9817;</div></td>
+            <td class="juodas"><div>&#9817;</div></td>
+            <td class="rudas"><div>&#9817;</div></td>
+            <td class="juodas"><div>&#9817;</div></td>
+            <td class="rudas"><div>&#9817;</div></td>
+            <td class="juodas"><div>&#9817;</div></td>
+            <td class="rudas"><div>&#9817;</div></td>
             <td class="simboliamsvertikalus" align="center">7</td>
 
         </tr>
         <tr>
             <td class="simboliamsvertikalus" align="center">8</td>
-            <td class="rudas">&#9814;</td>
-            <td class="juodas">&#9816;</td>
-            <td class="rudas">&#9815;</td>
-            <td class="juodas">&#9812;</td>
-            <td class="rudas">&#9813;</td>
-            <td class="juodas">&#9815;</td>
-            <td class="rudas">&#9816;</td>
-            <td class="juodas">&#9814;</td>
+            <td class="rudas"><div>&#9814;</div></td>
+            <td class="juodas"><div>&#9816;</div></td>
+            <td class="rudas"><div>&#9815;</div></td>
+            <td class="juodas"><div>&#9812;</div></td>
+            <td class="rudas"><div>&#9813;</div></td>
+            <td class="juodas"><div>&#9815;</div></td>
+            <td class="rudas"><div>&#9816;</div></td>
+            <td class="juodas"><div>&#9814;</div></td>
             <td class="simboliamsvertikalus" align="center">8</td>
         </tr>
         <tr>
