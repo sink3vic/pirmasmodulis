@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>06uzduotis</title>
+    <title>07uzduotis</title>
     <style>
         #pagrindas {
             background-color: grey;
@@ -29,20 +29,20 @@
             background-color: rgba(256, 0, 0, 0.5);
             position: relative;
             margin: auto;
-            top:10px;
+            top: 20%;
         }
 
         #G {
- 
+
             background-color: rgba(0, 256, 0, 0.5);
             border: 10px solid green;
-            left:10px;
-            bottom:10px;
+            left: 20%;
+            bottom: 20%;
         }
 
         #B {
-            bottom: 10px;
-            right: 10px;
+            bottom: 20%;
+            right: 20%;
             background-color: rgba(0, 0, 256, 0.5);
             border: 10px solid blue;
         }
@@ -55,12 +55,67 @@
             left: calc(50% - 3vw);
             top: calc(50% - 10vw);
             font-size: 10vw;
-            color:white;
+            color: white;
 
         }
 
 
+        @keyframes Rposlinkis {
+            from {
+                top: 20%;
+            }
+            to {
+                top: 10px;
+            }
 
+        }
+
+        #R {
+            animation: Rposlinkis 2s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(0.81, 1.47, .62, 1.6);
+        }
+
+
+        @keyframes Gposlinkis {
+            from {
+                bottom: 20%;
+                left: 20%;
+            }
+            to {
+                bottom: 10px;
+                left: 10px;
+            }
+
+        }
+
+        #G {
+            animation: Gposlinkis 2s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(0.81, 1.47, .62, 1.6);
+        }
+
+
+        @keyframes Bposlinkis {
+            from {
+                bottom: 20%;
+                right: 20%;
+            }
+            to {
+                bottom: 10px;
+                right: 10px;
+            }
+
+        }
+
+        #B {
+            animation: Bposlinkis 2s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(0.81, 1.47, .62, 1.6);
+        }
     </style>
 </head>
 
