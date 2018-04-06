@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>07uzduotis</title>
+    <style>
+        #pagrindas {
+            background-color: grey;
+            width: 50vw;
+            height: 50vw;
+            margin: auto;
+            border: 0;
+            border-radius: 0;
+            position: relative;
+            /* padding: 10px; */
+        }
+
+        div {
+            width: calc(60% - 20px);
+            height: calc(60% - 20px);
+            /* border:10px solid black; */
+            border-radius: 50%;
+            position: absolute;
+            text-align: center;
+        }
+
+        #R {
+            border: 10px solid red;
+            background-color: rgba(256, 0, 0, 0.5);
+            position: relative;
+            margin: auto;
+            top: 20%;
+        }
+
+        #G {
+
+            background-color: rgba(0, 256, 0, 0.5);
+            border: 10px solid green;
+            left: 20%;
+            bottom: 20%;
+        }
+
+        #B {
+            bottom: 20%;
+            right: 20%;
+            background-color: rgba(0, 0, 256, 0.5);
+            border: 10px solid blue;
+        }
+
+        div p {
+            /* vertical-align: middle; kažkodėl neviekia */
+            line-height: 0;
+            background-color: blueviolet;
+            position: absolute;
+            left: calc(50% - 3vw);
+            top: calc(50% - 10vw);
+            font-size: 10vw;
+            color: white;
+
+        }
+
+
+        @keyframes Rposlinkis {
+            from {
+                top: 20%;
+            }
+            to {
+                top: 10px;
+            }
+
+        }
+
+
+
+        @keyframes Gposlinkis {
+            from {
+                bottom: 20%;
+                left: 20%;
+            }
+            to {
+                bottom: 10px;
+                left: 10px;
+            }
+
+        }
+
+
+
+        @keyframes Bposlinkis {
+            from {
+                bottom: 20%;
+                right: 20%;
+            }
+            to {
+                bottom: 10px;
+                right: 10px;
+            }
+
+        }
+
+        #R{
+            animation: Rposlinkis 2s;
+        }
+        #G{
+            animation: Gposlinkis 2s;
+        }
+        #B{
+            animation: Bposlinkis 2s;
+        }
+        #R, #G, #B {
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(0.81, 1.47, .62, 1.6);
+        
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porttitor mi nec diam malesuada, ut porttitor ante feugiat.
+        Morbi eleifend erat sit amet orci finibus condimentum. Duis fermentum eget tellus ut sodales. Nullam blandit gravida
+        rutrum. Nulla quis turpis ligula. Donec ac libero vel sem tempor sollicitudin sit amet at lorem. Nunc odio mi, sodales
+        et porttitor in, maximus et lacus. Donec consequat rhoncus dolor, vitae pellentesque nibh hendrerit quis. Interdum
+        et malesuada fames ac ante ipsum primis in faucibus. Curabitur pulvinar luctus aliquam. Aenean interdum porttitor
+        enim, id facilisis dolor eleifend eu. Integer commodo neque tellus, id feugiat nunc euismod quis. Phasellus lectus
+        sapien, condimentum ac mauris a, accumsan congue diam. Vivamus vitae neque commodo, lobortis nisi nec, euismod ipsum.
+        Donec suscipit consectetur est quis lobortis.</p>
+    <div id="pagrindas">
+        <div id="R">
+            <p>R</p>
+        </div>
+        <div id="G">
+            <p>G</p>
+        </div>
+        <div id="B">
+            <p>B</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
