@@ -13,47 +13,137 @@
 
     <title>09uzduotisPUSLAPISBOOTSTRAP</title>
     <style>
-        body {
-            border: 2px solid red;
-            /* width:100vh;
-            height:100vh; */
-            /* background-color:blue; */
-        }
-
-        div {
-            /* border:2px solid black; */
-        }
-
-        #meniukonteineris {
-            background-color: aquamarine;
-        }
-
         #loginas {
-            height: 400px;
-            width: 200px;
-            border: 2px solid black;
+            box-shadow: 0 0 20px rgb(129, 129, 133);
+            margin-bottom: 30px;
+            padding: 10px;
+        }
+
+        #awesomefeatures {
+            background-color: rgb(41, 110, 41);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+        }
+
+        #navigacijos {
+            margin-bottom: 30px;
+            background-color: none;
+            border-bottom: 2px solid rgb(41, 110, 41);
+        }
+
+        .marginauto {
             margin: auto;
         }
 
-        #pagrindinis {
-            /* width:50vw; */
-            border: 10px solid yellow;
-            background-color: blue;
+        h1 {
+            border-bottom: 2px solid rgb(129, 129, 133);
         }
-        #navigacijos{
-            margin-bottom:30px;
+
+        #loginoelementas {
+            margin-left: 0.5em;
+            color: rgb(41, 110, 41);
         }
-        #pagrindinisdivas{
-            /* background-color:blue; */
-            height:100vh;
+
+        #signup {
+            margin: 20px;
+            margin-left: 0;
+        }
+
+        #loginbutton {
+            background-color: rgb(41, 110, 41);
+            border-color: rgb(41, 110, 41);
+        }
+
+        #forgottenpwd {
+            transform: translate(2px, 6px);
+            color: rgb(41, 110, 41);
+        }
+
+        #kitoksbutton {
+            border-radius: 12px;
+            background-color: rgb(83, 145, 83);
+            color: white;
+            padding: 5px;
+            border: 0;
+            margin-top: 15px;
+        }
+
+        h2 {
+            display: flex;
+        }
+
+        #features {
+            margin-left: 0.5em;
+            color: rgb(2, 59, 2);
+        }
+
+        #awesome {
+            color: white;
+        }
+
+        #pliusai {
+            display: flex;
+
+        }
+
+        #pliusai div {
+            color: white;
+        }
+
+        #pliusai div::after {            /*<------- nežinau kaip not panaudot, kad paskutinio brūkšnio nedėtų */
+            content: '/';
+            color: rgb(2, 59, 2);
+            margin: 2px;
+            font-weight: bold;
+        }
+
+        .boldas {
+            font-weight: bold;
+            color: white;
+            padding: 5px;
+            padding-left: 0;
+        }
+
+        #informacija {
+            background-color: rgb(97, 96, 96);
+            padding: 30px;
+
+        }
+
+        #informacija p {
+            line-height: 0;
+            color: white;
+        }
+
+        #informacija .line {
+            line-height: 1em;
+        }
+
+        .nuimtmargin {
+            margin: 5px;
+            margin-left: 0;
+        }
+
+        #email {
+            flex-grow: 1;
+            background-color: white;
+            padding: 10px;
+        }
+
+        #go {
+            background-color: rgb(41, 110, 41);
+            padding: 10px;
+            color: white;
         }
     </style>
 </head>
 
 <body>
-    <div id="pagrindinisdivas">
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navigacijos">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <img src="http://www.theappstrap.com/wp-content/uploads/2012/06/Logo_AppStrap-FINAL.png" width="50" height="50">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -92,32 +182,58 @@
         </div>
     </nav>
 
-    <form id="loginas">
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <div class="container" id="loginas">
+        <div class="row">
+            <div class="col-sm-10 marginauto">
+                <form>
+                    <h1>Login</h1>
+                    <div class="d-flex" id="signup">
+                        <div>Not signed up?</div>
+                        <div id="loginoelementas">Sign up here.</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="d-flex">
+                        <button class="btn btn-primary" id="loginbutton">Login</button>
+                        <div id="forgottenpwd"> | Forgotten password?</div>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-    <div id="pagrindinis">tekstas</div>
+
     </div>
+    <div id="awesomefeatures">
+        <h2>
+            <div id="awesome">AWESOME</div>
+            <div id="features">FEATURES</div>
+        </h2>
+        <div id="pliusai">
+            <div>99.9% uptime</div>
+            <div>Free Upgrades</div>
+            <div>Fully Responsive</div>
+            <div>Bug Free</div>
+        </div>
 
-
-
-
-
-
-
-
+        <button id="kitoksbutton">Get AppStrap today</button>
+    </div>
+    <div id="informacija">
+        <p class="boldas">CONTACT US</p>
+        <p>019223 801984654</p>
+        <p>info@appstraptheme.com</p>
+        <p>Sunshine House, Sunville. SUN12 8LU.</p>
+        <p class="boldas nuimtmargin">ABOUT US</p>
+        <p class="line">Making the web a prettier place one template at a time! We make beautiful, quality, responsive Drupal & web templates!</p>
+        <p class="boldas nuimtmargin">NEWSLETTER</p>
+        <p class="line">Stay up to date with our latest news and product releases by signing up to our newsletter.</p>
+        <div class=" d-flex ">
+            <div id="email">Email</div>
+            <div id="go">Go!</div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
