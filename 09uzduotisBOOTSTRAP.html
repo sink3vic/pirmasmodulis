@@ -13,6 +13,11 @@
 
     <title>09uzduotisPUSLAPISBOOTSTRAP</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
         #loginas {
             box-shadow: 0 0 20px rgb(129, 129, 133);
             margin-bottom: 30px;
@@ -72,6 +77,7 @@
 
         h2 {
             display: flex;
+            justify-content: center;
         }
 
         #features {
@@ -92,7 +98,8 @@
             color: white;
         }
 
-        #pliusai div::after {            /*<------- nežinau kaip not panaudot, kad paskutinio brūkšnio nedėtų */
+        #pliusai div::after {
+            /*<------- nežinau kaip not panaudot, kad paskutinio brūkšnio nedėtų */
             content: '/';
             color: rgb(2, 59, 2);
             margin: 2px;
@@ -137,6 +144,51 @@
             padding: 10px;
             color: white;
         }
+
+
+
+        @media (min-width: 992px){
+        #awesomefeatures {
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 100px;
+            padding-right: 100px;
+
+        }
+
+        h2 {
+            justify-content: flex-start;
+
+        }
+
+        #kitoksbutton {
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 2em;
+            border-radius: 40px;
+        }
+        #informacija{
+            display:flex;
+            justify-content: space-between;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        .informacijosblokas{
+            flex:0 0 33%;
+        }
+        body{
+            display:flex;
+            flex-direction: column;
+            height:100vh;
+        }
+        #loginoblokas{
+            flex-grow:1;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
     </style>
 </head>
 
@@ -182,9 +234,9 @@
         </div>
     </nav>
 
-    <div class="container" id="loginas">
+    <div class="container" id="loginoblokas">
         <div class="row">
-            <div class="col-sm-10 marginauto">
+            <div class="col-sm-10 col-lg-4 marginauto" id="loginas">
                 <form>
                     <h1>Login</h1>
                     <div class="d-flex" id="signup">
@@ -207,32 +259,40 @@
 
     </div>
     <div id="awesomefeatures">
-        <h2>
-            <div id="awesome">AWESOME</div>
-            <div id="features">FEATURES</div>
-        </h2>
-        <div id="pliusai">
-            <div>99.9% uptime</div>
-            <div>Free Upgrades</div>
-            <div>Fully Responsive</div>
-            <div>Bug Free</div>
+        <div>
+            <h2>
+                <div id="awesome">AWESOME</div>
+                <div id="features">FEATURES</div>
+            </h2>
+            <div id="pliusai">
+                <div>99.9% uptime</div>
+                <div>Free Upgrades</div>
+                <div>Fully Responsive</div>
+                <div>Bug Free</div>
+            </div>
         </div>
-
         <button id="kitoksbutton">Get AppStrap today</button>
     </div>
     <div id="informacija">
-        <p class="boldas">CONTACT US</p>
-        <p>019223 801984654</p>
-        <p>info@appstraptheme.com</p>
-        <p>Sunshine House, Sunville. SUN12 8LU.</p>
-        <p class="boldas nuimtmargin">ABOUT US</p>
-        <p class="line">Making the web a prettier place one template at a time! We make beautiful, quality, responsive Drupal & web templates!</p>
-        <p class="boldas nuimtmargin">NEWSLETTER</p>
-        <p class="line">Stay up to date with our latest news and product releases by signing up to our newsletter.</p>
-        <div class=" d-flex ">
-            <div id="email">Email</div>
-            <div id="go">Go!</div>
+        <div>
+            <p class="boldas">CONTACT US</p>
+            <p>019223 801984654</p>
+            <p>info@appstraptheme.com</p>
+            <p>Sunshine House, Sunville. SUN12 8LU.</p>
         </div>
+        <div class="informacijosblokas">
+            <p class="boldas nuimtmargin">ABOUT US</p>
+            <p class="line">Making the web a prettier place one template at a time! We make beautiful, quality, responsive Drupal & web templates!</p>
+        </div>
+        <div class="informacijosblokas">
+            <p class="boldas nuimtmargin">NEWSLETTER</p>
+            <p class="line">Stay up to date with our latest news and product releases by signing up to our newsletter.</p>
+            <div class=" d-flex ">
+                    <div id="email">Email</div>
+                    <div id="go">Go!</div>
+                </div>
+        </div>
+
     </div>
 
     <!-- Optional JavaScript -->
