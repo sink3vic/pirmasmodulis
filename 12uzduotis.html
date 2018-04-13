@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>    
+   
+</head>
+<body>
+    <p>Pradiniai duomenys:</p>
+    <p id="aukstis"></p>
+    <p id="plotis"></p>
+    <p>Apskaičiuoti parametrai</p>
+    <p id="perimetras"></p>
+    <p id="plotas"></p>
+    <p id="istrizaine"></p>
+
+        <script>
+
+                var aukstis = 10;
+                alert('staciakampio aukstis =' + aukstis); 
+                console.log('aukstis = ' + aukstis);   //developer tools'e
+                var spausdintauksti = 'aukstis = ' + aukstis;
+                document.getElementById("aukstis").innerHTML = spausdintauksti;
+
+                var plotis = 20;
+                alert('staciakampio plotis =' + plotis);
+                console.log('plotis = ' + plotis);   //developer tools'e
+                var spausdintploti = 'plotis = ' + plotis;
+                document.getElementById("plotis").innerHTML = spausdintploti;
+
+                var perimetras = 2 * aukstis + 2 * plotis; 
+                alert('staciakampio perimetras =' + perimetras);
+                console.log('perimetras = ' + perimetras);   //developer tools'e
+                var spausdintperimetra = 'perimetras = ' + perimetras;
+                document.getElementById("perimetras").innerHTML = spausdintperimetra;
+
+                var plotas = aukstis * plotis;
+                alert('staciakampio plotas =' + plotas);
+                console.log('plotas = ' + plotas);   //developer tools'e
+                var spausdintplota = 'plotas = ' + plotas;
+                document.getElementById("plotas").innerHTML = spausdintplota;
+                
+                var istrizaine = Math.sqrt(aukstis * aukstis + plotis * plotis);
+                alert('staciakampio istrizaine =' + istrizaine);
+                console.log('istrizaine = ' + istrizaine);   //developer tools'e
+                var spausdintistrizaine = 'istrizaine = ' + istrizaine;
+                document.getElementById("istrizaine").innerHTML = spausdintistrizaine;
+            </script>
+</body>
+</html>
