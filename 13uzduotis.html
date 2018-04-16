@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="isvada"></p>
+    <p id="tipas"></p>
+    <p id="plotas">trikampio plotas = </p>
+    <p id="tikrinimui"></p>
+
+    <script>
+        var a, b, c, p;
+
+        var elementas = document.getElementById("isvada");
+        var trikampio_tipas = document.getElementById("tipas");
+        var tikrinu = document.getElementById("tikrinimui"); // kintamasis tikrinimui
+        var plotas = document.getElementById("plotas");
+
+
+
+        //ivedami duomenys
+        a = 3;
+        b = 4;
+        c = 5;
+        //ar trikampis gali susidaryti
+        if (a + b > c && a + c > b && c + b > a) {
+
+            elementas.innerHTML = 'trikampis gali susidaryti';
+            p = (a + b + c) / 2;                                 //pusperimetris
+            plotas.innerHTML += Math.sqrt(p * (p - a) * (p - b) * (p - c))
+
+            if (a == b && b == c) {
+                trikampio_tipas.innerHTML = 'trikampis lygiakrastis';
+            } else if (a == b || b == c || c == a) {
+                trikampio_tipas.innerHTML = 'trikampis lygiasonis';
+
+            } else if (Math.sqrt(a * a + b * b) == c || Math.sqrt(c * c + b * b) == a || Math.sqrt(a * a + c * c) == b) {
+                trikampio_tipas.innerHTML = 'trikampis status';
+            } else {
+                trikampio_tipas.innerHTML = 'trikampis ivairiakrastis';
+            }
+
+        } else {
+            elementas.innerHTML = 'trikampis negali susidaryti';
+        }
+
+
+    </script>
+</body>
+
+</html>

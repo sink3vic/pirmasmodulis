@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table tr td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="remai" id="lenta"></table>
+
+    <script>
+
+        //kintamieji
+        var masyvas = ['2018-04-06 19:57:11', 'LRS123', 5000, 118];
+        var greitis_ms, greitis_kmh;
+
+        greitis_ms = masyvas[2] / masyvas[3];
+        greitis_kmh = greitis_ms * 3600 / 1000;
+        var lenta = document.getElementById("lenta");
+        lenta.innerHTML = '<tr><td>data</td><td>numeris</td><td>kelias</td><td>laikas</td><td>greitis kmh</td></tr><tr><td>' + masyvas[0] + '</td><td>' + masyvas[1] +
+            '</td><td>' + masyvas[2] + '</td><td>' + masyvas[3] + '</td><td>' + Math.round(greitis_kmh) + '</tr>';
+
+
+    </script>
+</body>
+
+</html>
