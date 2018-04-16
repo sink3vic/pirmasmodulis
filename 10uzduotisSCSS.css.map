@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,EAAE,CAAA;EACE,gBAAgB,EAAC,GAAG;CAKrB;;AANH,AAEI,EAFF,CAEE,EAAE,CAAA;EACE,gBAAgB,EAAC,IAAI;CACxB",
     "sources": [
         "10uzduotisSCSS.scss"
     ],
