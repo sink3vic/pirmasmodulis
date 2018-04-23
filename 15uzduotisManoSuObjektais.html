@@ -23,7 +23,7 @@
 <body>
     <div class="form-group">
         <label for="formGroupExampleInput">Data</label>
-        <input id="data" class="form-control" type="text" placeholder="">
+        <input class="form-control" type="text" placeholder="">
     </div>
     <div class="form-group">
         <label for="formGroupExampleInput">Numeris</label>
@@ -37,7 +37,7 @@
         <label for="formGroupExampleInput">Laikas sekundemis</label>
         <input class="form-control" type="text" placeholder="">
     </div>
-    <button onclick="masyvo_pildymas()" type="button" class="btn btn-primary">Primary</button>
+    <button onclick="masyvo_pildymas()" type="button" class="btn btn-primary">Pildyti</button>
     <table>
         <thead>
             <tr>
@@ -47,14 +47,16 @@
                 <td>Laikas</td>
                 <td>Greitis</td>
                 <td>trinti</td>
+                <td>taisyti</td>
             </tr>
         </thead>
         <tbody></tbody>
 
     </table>
-    <label><input>irasyk</label>
+   
 
     <script>
+        //padaryt salia mygtuka taisyti, ismeta tos eilutes duomenis irasuose, pataisai ka reikia ir spaudi submit
         var automobiliai = [
             { 'data': '2017-11-13', 'numeris': 'LDK128', 'kelias': 5000, 'laikas': 50 },
             { 'data': '2017-11-11', 'numeris': 'LDK122', 'kelias': 6000, 'laikas': 100 },
@@ -62,17 +64,20 @@
             { 'data': '2017-11-18', 'numeris': 'LDK129', 'kelias': 5000, 'laikas': 100 }
         ];
         var lenteles_elementas = document.querySelector("tbody");
+        var atributas_1, eilesnr_1;
+        eilesnr_1 = -1;
 
         function lenteles_pildymas() {
             var tekstas = '';            //kintamasis yra tik "pildymas" funkcijoje
             automobiliai.forEach(function (a, i) {
                 tekstas += '<tr>' +
                     '<td ondblclick="keisti(\'data\',' + i + ')">' + a.data + '</td>' +
-                    '<td ondblclick="keisti()">' + a.numeris + '</td>' +
-                    '<td ondblclick="keisti()">' + a.kelias + '</td>' +
-                    '<td ondblclick="keisti()">' + a.laikas + '</td>' +
-                    '<td ondblclick="keisti()">' + (a.kelias / a.laikas) * 3.6 + '</td>' +
+                    '<td ondblclick="keisti(\'numeris\',' + i + ')">' + a.numeris + '</td>' +
+                    '<td ondblclick="keisti(\'kelias\',' + i + ')">' + a.kelias + '</td>' +
+                    '<td ondblclick="keisti(\'laikas\',' + i + ')">' + a.laikas + '</td>' +
+                    '<td>' + (a.kelias / a.laikas) * 3.6 + '</td>' +
                     '<td><button onclick="trinti(' + i + ')">Trinti</button></td>' +
+                    '<td><button onclick="keisti(\'darnieko\',' + i + ')">Taisyti</button></td>' +
                     '</tr>'
             }
             )
@@ -83,20 +88,35 @@
             var objektas = '';
             inputai = document.querySelectorAll("input");
             objektas = {'data': inputai[0].value, 'numeris': inputai[1].value, 'kelias': inputai[2].value, 'laikas': inputai[3].value};
+
+            if(eilesnr_1 == -1){
             automobiliai.push(objektas);
+            } else {
+            automobiliai[eilesnr_1] = objektas; 
+            }
             inputai.forEach(a => a.value = '');
+            eilesnr_1 = -1;
+            document.querySelector("button").innerHTML = 'Pildyti';
             lenteles_pildymas();
+            
         }
         function trinti(indeksas){
             automobiliai.splice(indeksas,1);
             lenteles_pildymas();
         }
-        var atributas_1, eilesnr_1;
         function keisti(atributas, eilesnr){
             atributas_1 = atributas;
             eilesnr_1 = eilesnr;
-            alert('pataikei');
+            var i = 0;
+            alert('pakeiskite lentelės duomenis');
+            inputai = document.querySelectorAll("input");
+            for(x in automobiliai[eilesnr_1]){
+                inputai[i++].value = automobiliai[eilesnr_1][x];
+            }
+            document.querySelector("button").innerHTML = 'Saugoti';
+            
         }
+       // keisti('data', 0);
     
         ///////////Programos vykdymas//////////////
      //   document.getElementById("demo").addEventListener("dblclick", parasyk);
