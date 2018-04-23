@@ -53,7 +53,7 @@
         <tbody></tbody>
 
     </table>
-   
+
 
     <script>
         //padaryt salia mygtuka taisyti, ismeta tos eilutes duomenis irasuose, pataisai ka reikia ir spaudi submit
@@ -87,44 +87,35 @@
             var inputai;
             var objektas = '';
             inputai = document.querySelectorAll("input");
-            objektas = {'data': inputai[0].value, 'numeris': inputai[1].value, 'kelias': inputai[2].value, 'laikas': inputai[3].value};
+            objektas = { 'data': inputai[0].value, 'numeris': inputai[1].value, 'kelias': inputai[2].value, 'laikas': inputai[3].value };
 
-            if(eilesnr_1 == -1){
-            automobiliai.push(objektas);
+            if (eilesnr_1 == -1) {
+                automobiliai.push(objektas);
             } else {
-            automobiliai[eilesnr_1] = objektas; 
+                automobiliai[eilesnr_1] = objektas;
             }
             inputai.forEach(a => a.value = '');
             eilesnr_1 = -1;
             document.querySelector("button").innerHTML = 'Pildyti';
             lenteles_pildymas();
-            
+
         }
-        function trinti(indeksas){
-            automobiliai.splice(indeksas,1);
+        function trinti(indeksas) {
+            automobiliai.splice(indeksas, 1);
             lenteles_pildymas();
         }
-        function keisti(atributas, eilesnr){
+        function keisti(atributas, eilesnr) {
             atributas_1 = atributas;
             eilesnr_1 = eilesnr;
             var i = 0;
             alert('pakeiskite lentelės duomenis');
             inputai = document.querySelectorAll("input");
-            for(x in automobiliai[eilesnr_1]){
+            for (x in automobiliai[eilesnr_1]) {
                 inputai[i++].value = automobiliai[eilesnr_1][x];
             }
             document.querySelector("button").innerHTML = 'Saugoti';
-            
+
         }
-       // keisti('data', 0);
-    
-        ///////////Programos vykdymas//////////////
-     //   document.getElementById("demo").addEventListener("dblclick", parasyk);
-
-     //   function parasyk(){
-      //      document.getElementById("demo").innerHTML = 'parasiau';
-
-      //  }
         lenteles_pildymas();
 
     </script>
