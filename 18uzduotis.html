@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        label {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+          
+
+        }
+
+        #isvada {
+            margin-left: 10px;
+            margin-right:10px;
+        }
+            /*/////////////////////// RADAU KAŽKOKĮ SPINNER ////////////////////*/
+
+        .spinner {
+
+            width: 70px;
+            /* text-align: center; */
+            height: 10px;
+            align-self: center;
+            display:none;
+
+        }
+
+        .spinner>div {
+            width: 10px;
+            height: 10px;
+            background-color: #333;
+
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+            animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        }
+
+        .spinner .bounce1 {
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+        }
+
+        .spinner .bounce2 {
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+        }
+
+        @-webkit-keyframes sk-bouncedelay {
+            0%,
+            80%,
+            100% {
+                -webkit-transform: scale(0)
+            }
+            40% {
+                -webkit-transform: scale(1.0)
+            }
+        }
+
+        @keyframes sk-bouncedelay {
+            0%,
+            80%,
+            100% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+            40% {
+                -webkit-transform: scale(1.0);
+                transform: scale(1.0);
+            }
+        }
+        .ijungt{
+            display:flex;
+        }
+    </style>
+</head>
+
+<body>
+    <label>
+        <input id="slaptazodis">Naujas slaptažodis</label>
+    <label>
+        <input id="pakartotas">Pakartotinai suvestas naujas slaptažodis</label>
+    <div id="mygtuko">
+        <button>Keisti</button>
+        <div id="isvada"></div>
+        <div id="a" class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+
+    <script>
+        var slaptazodis = document.getElementById("slaptazodis");
+        var pakartotas = document.getElementById("pakartotas");
+        var mygtukas = document.querySelector("button");
+
+        mygtukas.onclick = tikrinimas;
+
+        function tikrinimas() {
+            if (slaptazodis.value == pakartotas.value) {
+                document.querySelector("#isvada").innerHTML = 'Prašome palaukti';
+                laukimas();
+            } else {
+                document.querySelector("#isvada").innerHTML = 'Slaptažodžiai nesutampa, bandykite dar kartą';
+                slaptazodis.value = '';
+                pakartotas.value = '';
+                document.getElementById("a").className = "spinner";
+            }
+        }
+        function laukimas(){
+            var elementas = document.getElementById("a");
+            var klases = elementas.classList;
+            klases.add("ijungt");
+        }
+
+    </script>
+</body>
+
+</html>
