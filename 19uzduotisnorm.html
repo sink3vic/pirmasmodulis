@@ -75,7 +75,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Ne</button>
-                        <button type="button" class="btn btn-primary" id="taip">Taip</button>
+                        <button type="button" class="btn btn-primary" id="taip" onclick="trinimo()">Taip</button>
                     </div>
                 </div>
             </div>
@@ -99,6 +99,7 @@
     <script>
         var automobiliu_masyvas = [];
         var eilesnr_1 = -1;
+        var trinimui;
 
         function automobiliai(data, numeris, kelias, laikas) {
             this.data = data;
@@ -142,20 +143,19 @@
             $("tbody").html(tekstas);
         }
         function trinimas(index) {
-            indeksas = index;
-            $('#taip').click(function() {  //iraso elementui taip funkcija trinti
-                automobiliu_masyvas.splice(indeksas, 1);
-                $('#trinimomodal').modal('hide');
-                lenteles_pildymas();
-            });
+            trinimui = index;
             $('#trinimomodal').modal('show');
-        }
 
-        function trinti(indeksas) {
-            automobiliu_masyvas.splice(indeksas, 1);
+        }
+        function trinimo(){
+            istrink();
+        }
+        function istrink(){
+            automobiliu_masyvas.splice(trinimui, 1);
             lenteles_pildymas();
             $('#trinimomodal').modal('hide');
         }
+
 
         function keisti(eilesnr) {
             eilesnr_1 = eilesnr;
