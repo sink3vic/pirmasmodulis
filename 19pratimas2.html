@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>19uzduotis2pratimas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            border-radius: 50%;
+        }
+
+        #b {
+            left: 100px;
+        }
+
+        #c {
+            left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a"></div>
+    <div id="b"></div>
+    <div id="c"></div>
+    <script>
+        var tikrinimas = 0;
+
+        $("#a").click(function () { //jeigu cia rasai nyksta(ab), tai iskart suvykdo ta funkcija nesulaukus paspaudimo
+            if (tikrinimas == false) {
+                nyksta('#b', '#c');
+                tikrinimas = true;
+            }
+        }).dblclick(function () {
+            atsiranda('#b', '#c');
+            tikrinimas = false;
+        });
+
+        $("#b").click(function () {
+            if (tikrinimas == false) {
+                nyksta('#a', '#c');
+                tikrinimas = true;
+            }
+        }).dblclick(function () {
+            atsiranda('#a', '#c');
+            tikrinimas = false;
+        });
+        
+        $("#c").click(function () {
+            if (tikrinimas == false) {
+                nyksta('#a', '#b');
+                tikrinimas = true;
+            }
+        }).dblclick(function () {
+            atsiranda('#a', '#b');
+            tikrinimas = false;
+        });
+
+
+        function nyksta(a, b) {
+            $(a).animate({
+                opacity: 0,
+            }, 2000);
+
+            $(b).animate({
+                opacity: 0,
+            }, 2000);
+        }
+        function atsiranda(a, b) {
+            $(a).animate({
+                opacity: 1,
+            }, 2000);
+
+            $(b).animate({
+                opacity: 1,
+            }, 2000);
+        }
+
+    </script>
+</body>
+
+</html>

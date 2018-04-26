@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>19pratimas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+    <p id="tekstas">kazkoks tekstas </p>
+    <a id="slepti">slepti</a>
+    <script>
+        $("#slepti").mouseenter(function(){
+            $("#tekstas").hide(2000);
+        }).mouseleave(function(){
+            $("#tekstas").show(2000);
+        });
+    </script>
+</body>
+</html>
