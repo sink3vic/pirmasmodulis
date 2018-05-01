@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #pagrindas {
+            width: calc(70vmin);
+            height: calc(70vmin);
+            margin: auto;
+        }
+
+        div div {
+            border: 1px solid black;
+            height: calc(10% - 2px + (20% - 2em - 4px)/8);
+            width: calc(10% - 2px + (20% - 2em - 4px)/8);
+            float: left;
+            display: flex;
+            justify-content: center;
+        }
+
+        div div div {
+            border: 0;
+            height: auto;
+            width: auto;
+            align-self: center;
+            font-size: 5vmin;
+            ;
+        }
+
+        .horizontalus {
+            height: 1em;
+            font-size: 1em;
+        }
+
+        .vertikalus {
+            width: 1em;
+            font-size: 1em;
+        }
+
+        div.juodas {
+            background-color: grey;
+        }
+        .baltas{
+            background-color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pagrindas">
+        <div class="horizontalus vertikalus"></div>
+        <!-- kampas -->
+        <div class="horizontalus">A</div>
+        <div class="horizontalus">B</div>
+        <div class="horizontalus">C</div>
+        <div class="horizontalus">D</div>
+        <div class="horizontalus">E</div>
+        <div class="horizontalus">F</div>
+        <div class="horizontalus">G</div>
+        <div class="horizontalus">H</div>
+        <div class="horizontalus vertikalus"></div>
+        <!-- kampas -->
+        <div class="vertikalus">1</div>
+        <div id="a1" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="bokstasj1" draggable="true" ondragstart="dragStart(event)">&#9820;</div>
+        </div>
+        <div id="b1" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="zirgasj1" draggable="true" ondragstart="dragStart(event)">&#9822;</div>
+        </div>
+        <div id="c1" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="rikisj1" draggable="true" ondragstart="dragStart(event)">&#9821;</div>
+        </div>
+        <div id="d1" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="karaliusj" draggable="true" ondragstart="dragStart(event)">&#9818;</div>
+        </div>
+        <div id="e1" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="damaj" draggable="true" ondragstart="dragStart(event)">&#9819;</div>
+        </div>
+        <div id="f1" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="rikisj2" draggable="true" ondragstart="dragStart(event)">&#9821;</div>
+        </div>
+        <div id="g1" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="zirgasj2" draggable="true" ondragstart="dragStart(event)">&#9822;</div>
+        </div>
+        <div id="h1" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="bokstasj2" draggable="true" ondragstart="dragStart(event)">&#9820;</div>
+        </div>
+        <div class="vertikalus">1</div>
+        <div class="vertikalus">2</div>
+        <div id="a2" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="pestininkasj1" draggable="true" ondragstart="dragStart(event)">&#9823;</div>
+        </div>
+        <div id="b2" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="pestininkasj2" draggable="true" ondragstart="dragStart(event)">&#9823;</div>
+        </div>
+        <div id="c2" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="pestininkasj3" draggable="true" ondragstart="dragStart(event)">&#9823;</div>
+        </div>
+        <div id="d2" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="pestininkasj4" draggable="true" ondragstart="dragStart(event)">&#9823;</div>
+        </div>
+        <div id="e2" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="pestininkasj5" draggable="true" ondragstart="dragStart(event)">&#9823;</div>
+        </div>
+        <div id="f2" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="pestininkasj6" draggable="true" ondragstart="dragStart(event)">&#9823;</div>
+        </div>
+        <div id="g2" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="pestininkasj7" draggable="true" ondragstart="dragStart(event)">&#9823;</div>
+        </div>
+        <div id="h2" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="pestininkasj8" draggable="true" ondragstart="dragStart(event)">&#9823;</div>
+        </div>
+        <div class="vertikalus">2</div>
+        <div class="vertikalus">3</div>
+        <div id="a3" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="b3" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="c3" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="d3" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="e3" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="f3" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="g3" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="h3" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="vertikalus">3</div>
+        <div class="vertikalus">4</div>
+        <div id="a4" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="b4" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="c4" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="d4" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="e4" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="f4" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="g4" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="h4" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="vertikalus">4</div>
+        <div class="vertikalus">5</div>
+        <div id="a5" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="b5" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="c5" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="d5" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="e5" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="f5" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="g5" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="h5" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="vertikalus">5</div>
+        <div class="vertikalus">6</div>
+        <div id="a6" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="b6" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="c6" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="d6" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="e6" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="f6" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="g6" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="h6" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="vertikalus">6</div>
+        <div class="vertikalus">7</div>
+        <div id="a7" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="pestininkas1" draggable="true" ondragstart="dragStart(event)">&#9817;</div>
+        </div>
+        <div id="b7" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="pestininkas2" draggable="true" ondragstart="dragStart(event)">&#9817;</div>
+        </div>
+        <div id="c7" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="pestininkas3" draggable="true" ondragstart="dragStart(event)">&#9817;</div>
+        </div>
+        <div id="d7" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="pestininkas4" draggable="true" ondragstart="dragStart(event)">&#9817;</div>
+        </div>
+        <div id="e7" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="pestininkas5" draggable="true" ondragstart="dragStart(event)">&#9817;</div>
+        </div>
+        <div id="f7" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="pestininkas6" draggable="true" ondragstart="dragStart(event)">&#9817;</div>
+        </div>
+        <div id="g7" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="pestininkas7" draggable="true" ondragstart="dragStart(event)">&#9817;</div>
+        </div>
+        <div id="h7" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="pestininkas8" draggable="true" ondragstart="dragStart(event)">&#9817;</div>
+        </div>
+        <div class="vertikalus">7</div>
+        <div class="vertikalus">8</div>
+        <div id="a8" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="bokstas1" draggable="true" ondragstart="dragStart(event)">&#9814;</div>
+        </div>
+        <div id="b8" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="zirgas1" draggable="true" ondragstart="dragStart(event)">&#9816;</div>
+        </div>
+        <div id="c8" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="rikis1" draggable="true" ondragstart="dragStart(event)">&#9815;</div>
+        </div>
+        <div id="d8" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="karalius" draggable="true" ondragstart="dragStart(event)">&#9812;</div>
+        </div>
+        <div id="e8" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="dama" draggable="true" ondragstart="dragStart(event)">&#9813;</div>
+        </div>
+        <div id="f8" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="rikis2" draggable="true" ondragstart="dragStart(event)">&#9815;</div>
+        </div>
+        <div id="g8" class="baltas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="zirgas2" draggable="true" ondragstart="dragStart(event)">&#9816;</div>
+        </div>
+        <div id="h8" class="juodas" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="bokstas2" draggable="true" ondragstart="dragStart(event)">&#9814;</div>
+        </div>
+        <div class="vertikalus">8</div>
+        <div class="horizontalus vertikalus"></div>
+        <!-- kampas -->
+        <div class="horizontalus">A</div>
+        <div class="horizontalus">B</div>
+        <div class="horizontalus">C</div>
+        <div class="horizontalus">D</div>
+        <div class="horizontalus">E</div>
+        <div class="horizontalus">F</div>
+        <div class="horizontalus">G</div>
+        <div class="horizontalus">H</div>
+        <div class="horizontalus vertikalus"></div>
+        <!-- kampas -->
+    </div>
+    <p id="demo"></p>
+    <script>
+        function dragStart(event) {
+            event.dataTransfer.setData("Text", event.target.id);
+            document.getElementById("demo").innerHTML = "Started to drag the p element";
+        }
+
+        function allowDrop(event) {
+            var elementas = event.target.childNodes;
+            if(elementas.length > 0) return;
+            event.preventDefault();
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            document.getElementById("demo").innerHTML = "The p element was dropped";
+            var data = event.dataTransfer.getData("Text");
+            event.target.appendChild(document.getElementById(data));
+          
+        }
+    </script>
+</body>
+
+</html>
