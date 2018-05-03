@@ -22,6 +22,8 @@
             box-shadow: 0 0 20px rgb(129, 129, 133);
             margin-bottom: 30px;
             padding: 10px;
+            /* padding:0;
+            margin:0; */
         }
 
         #awesomefeatures {
@@ -179,12 +181,18 @@
             flex-direction: column;
             height:100vh;
         }
-        #loginoblokas{
-            flex-grow:1;
+        #navigatorius{
             display:flex;
-            flex-direction: column;
-            justify-content: center;
+           
+           justify-content:flex-end;
+           width:100%;
         }
+        .nav-item{
+            font-size: 1em;
+            font-weight: bold;
+            color:black;
+        }
+
     }
     </style>
 </head>
@@ -199,39 +207,36 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
+            <ul class="navbar-nav mr-auto" id="navigatorius">
+                    <a class="navbar-brand nav-item active" href="#">
+                            <img src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/home-512.png" width="15" height="15" alt="">
+                          </a>
+         
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PAGES</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FEATURES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                    <a class="nav-link" href="#">SHOP</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link" href="#">ELEMENTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">MEGA MENU</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            </form> -->
         </div>
     </nav>
 
-    <div class="container" id="loginoblokas">
+    <div class="container">
         <div class="row">
             <div class="col-sm-10 col-lg-4 marginauto" id="loginas">
                 <form>
