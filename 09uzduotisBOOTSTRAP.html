@@ -122,8 +122,9 @@
         }
 
         #informacija p {
-            line-height: 0;
+            line-height: 1em;
             color: white;
+            margin: 0;
         }
 
         #informacija .line {
@@ -138,163 +139,200 @@
         #email {
             flex-grow: 1;
             background-color: white;
-            padding: 10px;
+            padding: 5px;
+            margin-top:1em;
+
         }
 
         #go {
             background-color: rgb(41, 110, 41);
-            padding: 10px;
+            padding: 5px;
             color: white;
+            margin-top:1em;
+        }
+
+        .iconairtekstas {
+            display: flex;
+        }
+
+        img {
+            margin-right: 0.5em;
         }
 
 
 
-        @media (min-width: 992px){
-        #awesomefeatures {
-            flex-direction: row;
-            justify-content: space-between;
-            padding-left: 100px;
-            padding-right: 100px;
-        }
-        h2 {
-            justify-content: flex-start;
-        }
+        @media (min-width: 992px) {
+            #awesomefeatures {
+                flex-direction: row;
+                justify-content: space-between;
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+            h2 {
+                justify-content: flex-start;
+            }
 
-        #kitoksbutton {
-            padding: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
-            font-size: 2em;
-            border-radius: 40px;
-        }
-        #informacija{
-            display:flex;
-            justify-content: space-between;
-            padding-left: 100px;
-            padding-right: 100px;
-        }
-        .informacijosblokas{
-            flex:0 0 33%;
-        }
-        body{
-            display:flex;
-            flex-direction: column;
-            height:100vh;
-        }
-        #navigatorius{
-            display:flex;
-           
-           justify-content:flex-end;
-           width:100%;
-        }
-        .nav-item{
-            font-size: 1em;
-            font-weight: bold;
-            color:black;
-        }
+            #kitoksbutton {
+                padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                font-size: 2em;
+                border-radius: 40px;
+            }
+            #informacija {
+                display: flex;
+                justify-content: space-between;
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+            .informacijosblokas {
+                flex: 0 0 33%;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+            #navigatorius {
+                display: flex;
 
-    }
+                justify-content: flex-end;
+                width: 100%;
+            }
+            .nav-item {
+                font-size: 1em;
+                font-weight: bold;
+                color: black;
+            }
+            #pagrindiniskonteineris {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+            .container {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+        }
     </style>
 </head>
 
 <body>
+    <div id="pagrindiniskonteineris">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navigacijos">
+            <img src="http://www.theappstrap.com/wp-content/uploads/2012/06/Logo_AppStrap-FINAL.png" width="50" height="50">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navigacijos">
-        <img src="http://www.theappstrap.com/wp-content/uploads/2012/06/Logo_AppStrap-FINAL.png" width="50" height="50">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto" id="navigatorius">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" id="navigatorius">
                     <a class="navbar-brand nav-item active" href="#">
-                            <img src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/home-512.png" width="15" height="15" alt="">
-                          </a>
-         
-                <li class="nav-item">
-                    <a class="nav-link" href="#">PAGES</a>
-                </li>
-            
-                <li class="nav-item">
-                    <a class="nav-link" href="#">FEATURES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">SHOP</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ELEMENTS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">MEGA MENU</a>
-                </li>
-            </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
+                        <img src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/home-512.png" width="15" height="15" alt="">
+                    </a>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PAGES</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FEATURES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ELEMENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MEGA MENU</a>
+                    </li>
+                    <a class="navbar-brand nav-item active" href="#">
+                            <img src="https://image.flaticon.com/icons/svg/126/126474.svg" width="15" height="15" alt="">
+                        </a>
+                </ul>
+                <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form> -->
-        </div>
-    </nav>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-10 col-lg-4 marginauto" id="loginas">
-                <form>
-                    <h1>Login</h1>
-                    <div class="d-flex" id="signup">
-                        <div>Not signed up?</div>
-                        <div id="loginoelementas">Sign up here.</div>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="d-flex">
-                        <button class="btn btn-primary" id="loginbutton">Login</button>
-                        <div id="forgottenpwd"> | Forgotten password?</div>
-                    </div>
-                </form>
             </div>
-        </div>
+        </nav>
 
-    </div>
-    <div id="awesomefeatures">
-        <div>
-            <h2>
-                <div id="awesome">AWESOME</div>
-                <div id="features">FEATURES</div>
-            </h2>
-            <div id="pliusai">
-                <div>99.9% uptime</div>
-                <div>Free Upgrades</div>
-                <div>Fully Responsive</div>
-                <div>Bug Free</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-lg-4 marginauto" id="loginas">
+                    <form>
+                        <h1>Login</h1>
+                        <div class="d-flex" id="signup">
+                            <div>Not signed up?</div>
+                            <div id="loginoelementas">Sign up here.</div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="d-flex">
+                            <button class="btn btn-primary" id="loginbutton">Login</button>
+                            <div id="forgottenpwd"> | Forgotten password?</div>
+                        </div>
+                    </form>
+                </div>
             </div>
+
         </div>
-        <button id="kitoksbutton">Get AppStrap today</button>
-    </div>
-    <div id="informacija">
-        <div>
-            <p class="boldas">CONTACT US</p>
-            <p>019223 801984654</p>
-            <p>info@appstraptheme.com</p>
-            <p>Sunshine House, Sunville. SUN12 8LU.</p>
+        <div id="awesomefeatures">
+            <div>
+                <h2>
+                    <div id="awesome">AWESOME</div>
+                    <div id="features">FEATURES</div>
+                </h2>
+                <div id="pliusai">
+                    <div>99.9% uptime</div>
+                    <div>Free Upgrades</div>
+                    <div>Fully Responsive</div>
+                    <div>Bug Free</div>
+                </div>
+            </div>
+            <button id="kitoksbutton">Get AppStrap today &rarr;</button>
         </div>
-        <div class="informacijosblokas">
-            <p class="boldas nuimtmargin">ABOUT US</p>
-            <p class="line">Making the web a prettier place one template at a time! We make beautiful, quality, responsive Drupal & web templates!</p>
-        </div>
-        <div class="informacijosblokas">
-            <p class="boldas nuimtmargin">NEWSLETTER</p>
-            <p class="line">Stay up to date with our latest news and product releases by signing up to our newsletter.</p>
-            <div class=" d-flex ">
+        <div id="informacija">
+            <div>
+                <p class="boldas">CONTACT US</p>
+                <div class="iconairtekstas">
+                    <img src="https://png.icons8.com/metro/1600/phone.png" width="15" height="15" alt="">
+                    <p>019223 801984654</p>
+                </div>
+                <div class="iconairtekstas">
+                    <img src="https://www.flaticon.com/premium-icon/icons/svg/542/542689.svg" width="15" height="15" alt="">
+                    <p>info@appstraptheme.com</p>
+                </div>
+                <div class="iconairtekstas">
+                    <img src="https://image.flaticon.com/icons/svg/25/25694.svg" width="15" height="15" alt="">
+                    <p>Sunshine House, Sunville. SUN12 8LU.</p>
+                </div>
+            </div>
+            <div class="informacijosblokas">
+                <p class="boldas nuimtmargin">ABOUT US</p>
+                <p class="line">Making the web a prettier place one template at a time! We make beautiful, quality, responsive Drupal & web
+                    templates!
+                </p>
+            </div>
+            <div class="informacijosblokas">
+                <p class="boldas nuimtmargin">NEWSLETTER</p>
+                <p class="line">Stay up to date with our latest news and product releases by signing up to our newsletter.</p>
+                <div class=" d-flex ">
                     <div id="email">Email</div>
                     <div id="go">Go!</div>
                 </div>
-        </div>
+            </div>
 
+        </div>
     </div>
 
     <!-- Optional JavaScript -->
