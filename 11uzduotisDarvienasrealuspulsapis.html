@@ -241,6 +241,7 @@
             }
             #trecias {
                 display: flex;
+                /* width:100vw; */
             }
             #trecias div {
                 border: 2px solid black;
@@ -249,10 +250,15 @@
                 display: flex;
             }
             #bonusfeatures {
-                flex-basis: 75%;
+                /* flex-basis: 75%; */
+                width:75%;
+                display:flex;
+                flex-direction:column;
+                
             }
             #questions {
-                flex-basis: 25%;
+                /* flex-basis: 25%; */
+                width:25%;
             }
             #meniu {
                 /* flex-grow: 1; */
@@ -274,6 +280,31 @@
             #tekstasirpaveiksliukas {
                 display: flex;
             }
+            h3 {
+                display: flex;
+            }
+            h3 div:nth-child(2) {
+                margin-left: 0.25em;
+                margin-right: 1em;
+                color: gray;
+            }
+            .uzpildo {
+                /* border: 2px solid gray; */
+                flex-grow: 1;
+               
+                font-size: 5px;
+                height:10px;
+                align-self: flex-end;
+                
+            }
+            .flexui {
+                display:flex;
+                /* border:2px solid black; */
+                flex-grow:1;
+                overflow: hidden;
+                margin:0 !important;
+            }
+ 
         }
     </style>
 </head>
@@ -321,7 +352,13 @@
         </nav>
         <div id="naujo">
             <div id="pirmas">
-                <h3>Core Features</h3>
+                <h3>
+                    <div>Core</div>
+                    <div>Features</div>
+                    <div class="flexui">
+                        <div class="uzpildo">uzpildo</div>
+                    </div>
+                </h3>
                 <div>Core features included in all plans.</div>
             </div>
             <div id="antras">
@@ -347,8 +384,14 @@
             <div id="trecias">
                 <div id="bonusfeatures">
                     <div class="antraste">
-                        <h3>Core Features</h3>
-                        <div>Core features included in all plans.</div>
+                        <h3>
+                            <div>Bonus</div>
+                            <div>Features</div>
+                            <div class="flexui">
+                                <div class="uzpildo"></div>
+                            </div>
+                        </h3>
+                        <div>Bonus features only included in our Pro and Pro + plans.</div>
                     </div>
                     <div id="meniuiraprasas">
                         <div id="meniu">
@@ -359,23 +402,42 @@
                         </div>
                         <div id="aprasas">
                             <div id="tekstasirpaveiksliukas">
-                            <div>
-                                <h3>Mobile friendly</h3>
-                                <p>Rhoncus adipiscing, magna integer cursus augue eros lacus portitor magna. Dictumst, odio!
-                                    Elementum tortor sociss in eu dis dictumnst pulvinar lorem nec aliquarm a nascetur.</p>
+                                <div>
+                                    <h3>Mobile friendly</h3>
+                                    <p>Rhoncus adipiscing, magna integer cursus augue eros lacus portitor magna. Dictumst, odio!
+                                        Elementum tortor sociss in eu dis dictumnst pulvinar lorem nec aliquarm a nascetur.</p>
+                                </div>
+                                <div>paveiksliukas</div>
                             </div>
-                            <div>paveiksliukas</div>
-                        </div>
                             <p>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna.</p>
                         </div>
                     </div>
                 </div>
                 <div id="questions">
                     <div class="antraste">
-                        <h3>Core Features</h3>
-                        <div>Core features included in all plans.</div>
+                        <h3>
+                            <div>Questions?</div>
+                            <div class="flexui">
+                                <div class="uzpildo"></div>
+                            </div>                         
+                        </h3>
+                        
+                        <div>Get in touch!</div>
                     </div>
-                    <div>questions</div>
+                    <div>
+                        <div class="iconairtekstas">
+                            <img src="https://png.icons8.com/metro/1600/phone.png" width="15" height="15" alt="">
+                            <p>019223 801984654</p>
+                        </div>
+                        <div class="iconairtekstas">
+                            <img src="https://www.flaticon.com/premium-icon/icons/svg/542/542689.svg" width="15" height="15" alt="">
+                            <p>info@appstraptheme.com</p>
+                        </div>
+                        <div class="iconairtekstas">
+                            <img src="https://image.flaticon.com/icons/svg/25/25694.svg" width="15" height="15" alt="">
+                            <p>Sunshine House, Sunville. SUN12 8LU.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -438,6 +500,19 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-</body>
+    <script>
+
+    $(".uzpildo").html(tekstas());
+
+
+    function tekstas(){
+        var tekstas = '';
+        for(i=0; i < 1000; i++){
+            tekstas+='/';
+        }
+        return tekstas;
+    }
+    </script>
+    </body>
 
 </html>
