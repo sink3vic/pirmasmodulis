@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- eina prieš visus mano css failus -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+
+    <title>11uzduotisdarvienas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #loginas {
+            box-shadow: 0 0 20px rgb(129, 129, 133);
+            margin-bottom: 30px;
+            margin-top: 30px;
+            padding: 10px;
+            /* padding:0;
+            margin:0; */
+        }
+
+        #awesomefeatures {
+            background-color: rgb(41, 110, 41);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+        }
+
+        #navigacijos {
+            /* margin-bottom: 30px; */
+            background-color: none;
+            border-bottom: 2px solid rgb(41, 110, 41);
+        }
+
+        .marginauto {
+            margin: auto;
+        }
+
+        h1 {
+            border-bottom: 2px solid rgb(129, 129, 133);
+        }
+
+        #loginoelementas {
+            margin-left: 0.5em;
+            color: rgb(41, 110, 41);
+        }
+
+        #signup {
+            margin: 20px;
+            margin-left: 0;
+        }
+
+        #loginbutton {
+            background-color: rgb(41, 110, 41);
+            border-color: rgb(41, 110, 41);
+        }
+
+        #forgottenpwd {
+            transform: translate(2px, 6px);
+            color: rgb(41, 110, 41);
+        }
+
+        #kitoksbutton {
+            border-radius: 12px;
+            background-color: rgb(83, 145, 83);
+            color: white;
+            padding: 5px;
+            border: 0;
+            margin-top: 15px;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        #features {
+            margin-left: 0.5em;
+            color: rgb(2, 59, 2);
+        }
+
+        #awesome {
+            color: white;
+        }
+
+        #pliusai {
+            display: flex;
+
+        }
+
+        #pliusai div {
+            color: white;
+        }
+
+        #pliusai div::after {
+            /*<------- nežinau kaip not panaudot, kad paskutinio brūkšnio nedėtų */
+            content: '/';
+            color: rgb(2, 59, 2);
+            margin: 2px;
+            font-weight: bold;
+        }
+
+        .boldas {
+            font-weight: bold;
+            color: white;
+            padding: 5px;
+            padding-left: 0;
+        }
+
+        #informacija {
+            background-color: rgb(97, 96, 96);
+            padding: 30px;
+
+        }
+
+        #informacija p {
+            line-height: 1em;
+            color: white;
+            margin: 0;
+        }
+
+        #informacija .line {
+            line-height: 1em;
+        }
+
+        .nuimtmargin {
+            margin: 5px;
+            margin-left: 0;
+        }
+
+        #email {
+            flex-grow: 1;
+            background-color: white;
+            padding: 5px;
+            margin-top: 1em;
+
+        }
+
+        #go {
+            background-color: rgb(41, 110, 41);
+            padding: 5px;
+            color: white;
+            margin-top: 1em;
+        }
+
+        .iconairtekstas {
+            display: flex;
+        }
+
+        img {
+            margin-right: 0.5em;
+        }
+
+
+
+        @media (min-width: 992px) {
+            #awesomefeatures {
+                flex-direction: row;
+                justify-content: space-between;
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+            h2 {
+                justify-content: flex-start;
+            }
+
+            #kitoksbutton {
+                padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                font-size: 2em;
+                border-radius: 40px;
+            }
+            #informacija {
+                display: flex;
+                justify-content: space-between;
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+            .informacijosblokas {
+                flex: 0 0 33%;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+                /* height: 100vh; */
+            }
+            #navigatorius {
+                display: flex;
+
+                justify-content: flex-end;
+                width: 100%;
+            }
+            .nav-item {
+                font-size: 1em;
+                font-weight: bold;
+                color: black;
+            }
+            #pagrindiniskonteineris {
+                display: flex;
+                flex-direction: column;
+                /* height: 100vh; */
+            }
+            .container {
+                flex-grow: 1;
+                flex-basis: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            #loginas {
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+            #naujo {
+                display: flex;
+                flex-direction: column;
+
+            }
+            #naujo>div {
+                margin: 10px;
+            }
+            #antras {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            #antras div {
+                border: 2px solid black;
+                flex-basis: 33%;
+
+            }
+            #trecias {
+                display: flex;
+            }
+            #trecias div {
+                border: 2px solid black;
+            }
+            #meniuiraprasas {
+                display: flex;
+            }
+            #bonusfeatures {
+                flex-basis: 75%;
+            }
+            #questions {
+                flex-basis: 25%;
+            }
+            #meniu {
+                /* flex-grow: 1; */
+                flex-basis: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: stretch;
+            }
+            #meniu>div {
+                flex-grow: 1;
+            }
+            #aprasas {
+                /* flex-grow: 3; */
+                flex-basis: 70%;
+            }
+            .antraste {
+                margin-bottom: 20px;
+            }
+            #tekstasirpaveiksliukas {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pagrindiniskonteineris">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navigacijos">
+            <img src="http://www.theappstrap.com/wp-content/uploads/2012/06/Logo_AppStrap-FINAL.png" width="50" height="50">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" id="navigatorius">
+                    <a class="navbar-brand nav-item active" href="#">
+                        <img src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/home-512.png" width="15" height="15" alt="">
+                    </a>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PAGES</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FEATURES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ELEMENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MEGA MENU</a>
+                    </li>
+                    <a class="navbar-brand nav-item active" href="#">
+                        <img src="https://image.flaticon.com/icons/svg/126/126474.svg" width="15" height="15" alt="">
+                    </a>
+                </ul>
+                <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+            </div>
+        </nav>
+        <div id="naujo">
+            <div id="pirmas">
+                <h3>Core Features</h3>
+                <div>Core features included in all plans.</div>
+            </div>
+            <div id="antras">
+                <div>
+                    Fully Optimized
+                </div>
+                <div>
+                    Free Support
+                </div>
+                <div>
+                    Free Upgrades
+                </div>
+                <div>
+                    99.9% Uptime
+                </div>
+                <div>
+                    Multiuser
+                </div>
+                <div>
+                    Plug n play
+                </div>
+            </div>
+            <div id="trecias">
+                <div id="bonusfeatures">
+                    <div class="antraste">
+                        <h3>Core Features</h3>
+                        <div>Core features included in all plans.</div>
+                    </div>
+                    <div id="meniuiraprasas">
+                        <div id="meniu">
+                            <div>Mobile Fiendly</div>
+                            <div>24/7 Support</div>
+                            <div>Upgrade Assistance</div>
+                            <div>99.9% Uptime</div>
+                        </div>
+                        <div id="aprasas">
+                            <div id="tekstasirpaveiksliukas">
+                            <div>
+                                <h3>Mobile friendly</h3>
+                                <p>Rhoncus adipiscing, magna integer cursus augue eros lacus portitor magna. Dictumst, odio!
+                                    Elementum tortor sociss in eu dis dictumnst pulvinar lorem nec aliquarm a nascetur.</p>
+                            </div>
+                            <div>paveiksliukas</div>
+                        </div>
+                            <p>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="questions">
+                    <div class="antraste">
+                        <h3>Core Features</h3>
+                        <div>Core features included in all plans.</div>
+                    </div>
+                    <div>questions</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="awesomefeatures">
+            <div>
+                <h2>
+                    <div id="awesome">AWESOME</div>
+                    <div id="features">FEATURES</div>
+                </h2>
+                <div id="pliusai">
+                    <div>99.9% uptime</div>
+                    <div>Free Upgrades</div>
+                    <div>Fully Responsive</div>
+                    <div>Bug Free</div>
+                </div>
+            </div>
+            <button id="kitoksbutton">Get AppStrap today &rarr;</button>
+        </div>
+        <div id="informacija">
+            <div>
+                <p class="boldas">CONTACT US</p>
+                <div class="iconairtekstas">
+                    <img src="https://png.icons8.com/metro/1600/phone.png" width="15" height="15" alt="">
+                    <p>019223 801984654</p>
+                </div>
+                <div class="iconairtekstas">
+                    <img src="https://www.flaticon.com/premium-icon/icons/svg/542/542689.svg" width="15" height="15" alt="">
+                    <p>info@appstraptheme.com</p>
+                </div>
+                <div class="iconairtekstas">
+                    <img src="https://image.flaticon.com/icons/svg/25/25694.svg" width="15" height="15" alt="">
+                    <p>Sunshine House, Sunville. SUN12 8LU.</p>
+                </div>
+            </div>
+            <div class="informacijosblokas">
+                <p class="boldas nuimtmargin">ABOUT US</p>
+                <p class="line">Making the web a prettier place one template at a time! We make beautiful, quality, responsive Drupal & web
+                    templates!
+                </p>
+            </div>
+            <div class="informacijosblokas">
+                <p class="boldas nuimtmargin">NEWSLETTER</p>
+                <p class="line">Stay up to date with our latest news and product releases by signing up to our newsletter.</p>
+                <div class=" d-flex ">
+                    <div id="email">Email</div>
+                    <div id="go">Go!</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- visąlaik šitie tokia tvarka ir pačiam gale body elemento-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
