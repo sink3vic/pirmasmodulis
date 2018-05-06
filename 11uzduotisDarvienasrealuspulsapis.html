@@ -224,7 +224,7 @@
             #naujo {
                 display: flex;
                 flex-direction: column;
-                padding:20px;
+                padding: 20px;
 
             }
             #naujo>div {
@@ -235,10 +235,10 @@
                 flex-wrap: wrap;
                 justify-content: center;
             }
-            #antras > div {
+            #antras>div {
                 flex-basis: 25%;
-                height:35%;
-                margin:2em;
+                height: 35%;
+                margin: 2em;
 
             }
             #trecias {
@@ -251,25 +251,30 @@
                 display: flex;
             }
             #bonusfeatures {
-                width:75%;
-                display:flex;
-                flex-direction:column;
-                
+                width: 75%;
+                display: flex;
+                flex-direction: column;
+
             }
             #questions {
-                width:25%;
+                width: 25%;
             }
             #meniu {
                 flex-basis: 30%;
                 display: flex;
                 flex-direction: column;
                 justify-content: stretch;
+                /* height:80%; */
+                /* border: 2px solid black; */
             }
             #meniu>div {
                 flex-grow: 1;
+                border: 2px solid black;
+                display: flex;
             }
             #aprasas {
                 flex-basis: 70%;
+                padding-right: 10px;
             }
             .antraste {
                 margin-bottom: 20px;
@@ -288,30 +293,35 @@
             .uzpildo {
                 flex-grow: 1;
                 font-size: 5px;
-                height:10px;
+                height: 10px;
                 align-self: flex-end;
             }
             .flexui {
-                display:flex;
-                flex-grow:1;
+                display: flex;
+                flex-grow: 1;
                 overflow: hidden;
-                margin:0;
-                margin-right:1em;
-                
+                margin: 0;
+                margin-right: 1em;
+
             }
-            .pilka{
-                color:gray;
+            .pilka {
+                color: gray;
             }
-            #antras > div{
-                display:flex;
+            #antras>div {
+                display: flex;
                 flex-direction: column;
                 align-items: center;
             }
-            .centre{
+            .centre {
                 text-align: center;
             }
-            .boldtextas{
-                font-weight:bold;
+            .boldtextas {
+                font-weight: bold;
+            }
+            .meniupunktai {
+                /* border: 2px solid black; */
+                align-self: center;
+                margin-left: 0.5em;
             }
         }
     </style>
@@ -371,34 +381,36 @@
             </div>
             <div id="antras">
                 <div>
-                        <img src="https://image.flaticon.com/icons/svg/748/748060.svg" width="70" height="70" alt="">
-                        <div class="boldtextas">Fully Optimized</div>
-                        <div class="pilka centre">Eligo ibidem populus usitas Adipisong commoweo culsed windico vulputase.</div>
+                    <img src="https://image.flaticon.com/icons/svg/748/748060.svg" width="70" height="70" alt="">
+                    <div class="boldtextas">Fully Optimized</div>
+                    <div class="pilka centre">Eligo ibidem populus usitas Adipisong commoweo culsed windico vulputase.</div>
                 </div>
                 <div>
-                        <img src="https://image.flaticon.com/icons/svg/126/126428.svg" width="70" height="70" alt="">
-                        <div class="boldtextas">Free Support</div>
-                        <div class="pilka centre">At commando fedui perrtinea suscipit torqueo veroero. Ablue facili idea in jumentum nunc simils singularis ullancorper</div>
+                    <img src="https://image.flaticon.com/icons/svg/126/126428.svg" width="70" height="70" alt="">
+                    <div class="boldtextas">Free Support</div>
+                    <div class="pilka centre">At commando fedui perrtinea suscipit torqueo veroero. Ablue facili idea in jumentum nunc simils singularis
+                        ullancorper
+                    </div>
                 </div>
                 <div>
-                        <img src="https://image.flaticon.com/icons/svg/212/212819.svg" width="70" height="70" alt="">
-                        <div class="boldtextas">Free Upgrades</div>
-                        <div class="pilka centre">Eligo ibidem populus usitas Adipisong commoweo culsed windico vulputase.</div>
+                    <img src="https://image.flaticon.com/icons/svg/212/212819.svg" width="70" height="70" alt="">
+                    <div class="boldtextas">Free Upgrades</div>
+                    <div class="pilka centre">Eligo ibidem populus usitas Adipisong commoweo culsed windico vulputase.</div>
                 </div>
                 <div>
-                        <img src="https://image.flaticon.com/icons/svg/126/126425.svg" width="70" height="70" alt="">
-                        <div class="boldtextas">99.9% Uptime</div>
-                        <div class="pilka centre">Eligo ibidem populus usitas Adipisong commoweo culsed </div>
+                    <img src="https://image.flaticon.com/icons/svg/126/126425.svg" width="70" height="70" alt="">
+                    <div class="boldtextas">99.9% Uptime</div>
+                    <div class="pilka centre">Eligo ibidem populus usitas Adipisong commoweo culsed </div>
                 </div>
                 <div>
-                        <img src="https://image.flaticon.com/icons/svg/33/33308.svg" width="70" height="70" alt="">
-                        <div class="boldtextas">Multiuser</div>
-                        <div class="pilka centre">Eligo ibidem populus usitas Adipisong commoweo .</div>
+                    <img src="https://image.flaticon.com/icons/svg/33/33308.svg" width="70" height="70" alt="">
+                    <div class="boldtextas">Multiuser</div>
+                    <div class="pilka centre">Eligo ibidem populus usitas Adipisong commoweo .</div>
                 </div>
                 <div>
-                        <img src="https://image.flaticon.com/icons/svg/131/131090.svg" width="70" height="70" alt="">
-                        <div class="boldtextas">Plug n play</div>
-                        <div class="pilka centre">Eligo ibidem populus usitas Adipisong commoweo </div>
+                    <img src="https://image.flaticon.com/icons/svg/131/131090.svg" width="70" height="70" alt="">
+                    <div class="boldtextas">Plug n play</div>
+                    <div class="pilka centre">Eligo ibidem populus usitas Adipisong commoweo </div>
                 </div>
             </div>
             <div id="trecias">
@@ -415,10 +427,18 @@
                     </div>
                     <div id="meniuiraprasas">
                         <div id="meniu">
-                            <div>Mobile Fiendly</div>
-                            <div>24/7 Support</div>
-                            <div>Upgrade Assistance</div>
-                            <div>99.9% Uptime</div>
+                            <div>
+                                <div class="meniupunktai">Mobile Fiendly</div>
+                            </div>
+                            <div>
+                                <div class="meniupunktai">24/7 Support</div>
+                            </div>
+                            <div>
+                                <div class="meniupunktai">Upgrade Assistance</div>
+                            </div>
+                            <div>
+                                <div class="meniupunktai">99.9% Uptime</div>
+                            </div>
                         </div>
                         <div id="aprasas">
                             <div id="tekstasirpaveiksliukas">
@@ -427,7 +447,9 @@
                                     <p>Rhoncus adipiscing, magna integer cursus augue eros lacus portitor magna. Dictumst, odio!
                                         Elementum tortor sociss in eu dis dictumnst pulvinar lorem nec aliquarm a nascetur.</p>
                                 </div>
-                                <div>paveiksliukas</div>
+                                <!-- <div>paveiksliukas</div> -->
+                                <img src="https://image.flaticon.com/icons/svg/0/191.svg" width="200" height="150" alt="">
+
                             </div>
                             <p>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna.</p>
                         </div>
@@ -439,9 +461,9 @@
                             <div>Questions?</div>
                             <div class="flexui">
                                 <div class="uzpildo"></div>
-                            </div>                         
+                            </div>
                         </h3>
-                        
+
                         <div class="pilka">Get in touch!</div>
                     </div>
                     <div>
@@ -522,17 +544,17 @@
         crossorigin="anonymous"></script>
     <script>
 
-    $(".uzpildo").html(tekstas());
+        $(".uzpildo").html(tekstas());
 
 
-    function tekstas(){
-        var tekstas = '';
-        for(i=0; i < 1000; i++){
-            tekstas+='/';
+        function tekstas() {
+            var tekstas = '';
+            for (i = 0; i < 1000; i++) {
+                tekstas += '/';
+            }
+            return tekstas;
         }
-        return tekstas;
-    }
     </script>
-    </body>
+</body>
 
 </html>
