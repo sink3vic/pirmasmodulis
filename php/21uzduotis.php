@@ -35,7 +35,7 @@
          * @version   CVS: $Id: PEARCodingStandard.php,v 1.6 2007/08/02 23:18:31 squiz Exp $
          * @link      http://pear.php.net/package/PHP_CodeSniffer
          */
-    
+    $integer = 10;
     
     echo "<div>&#169; ". date(Y) ."</div>";
       
