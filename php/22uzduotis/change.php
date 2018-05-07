@@ -14,4 +14,5 @@ if (strlen($_POST['slaptazodis']) > 5) {
     ];
 }
 
+
 echo json_encode($response);
