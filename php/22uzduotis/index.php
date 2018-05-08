@@ -33,18 +33,13 @@
                         $('#isphp').html('Slaptažodis pakeistas');
                     } else {
                         $('#isphp').html(resp.error);
-
                     }
-
                 });
 
             } else {
                 $('#isvada').html('Slaptažodžiai nesutampa - bandykite dar kartą');
-
                 console.log("not okei");
             }
-
-
         }
     </script>
 </body>
