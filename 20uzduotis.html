@@ -23,10 +23,6 @@
             var gatve = $('input[name="gatve"]').val();
             var numeris = $('input[name="numeris"]').val();
 
-            $.get('https://postit.lt/data', {'address': gatve + ' ' + numeris +', ' + miestas}, function(resp) {
-                console.log(resp);
-                $('p').html('Pašto indeksas: ' + resp.data[0].post_code);   
-            });
 
             $.get('https://postit.lt/data', 
                 {'address': gatve + ' ' + numeris +', ' + miestas}
