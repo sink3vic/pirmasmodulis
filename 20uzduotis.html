@@ -30,14 +30,14 @@
 
             $.get('https://postit.lt/data', 
                 {'address': gatve + ' ' + numeris +', ' + miestas}
-            ).done(function(resp) {
+            ).done(function(resp) {         //grazina atsakyma kaip resp - cia resp yra objektas
                 console.log(resp);
                 if (resp.data && resp.data.length > 0) {
                     $('p').html('Pašto indeksas: ' + resp.data[0].post_code);
                 } else {
                     $('p').html('Blogas adresas');
                 }
-            }).error(function() {
+            }).error(function() {       //meta errora jeigu nepavyksta prisijungti prie postit.lt
                 $('p').html('Serverio klaida');
             });
         }
