@@ -145,7 +145,7 @@
 
         }
 
-        #go {
+        .go {
             background-color: rgb(41, 110, 41);
             padding: 5px;
             color: white;
@@ -269,12 +269,13 @@
             }
             #meniu>div {
                 flex-grow: 1;
-                border: 2px solid black;
+                /* border: 2px solid black; */
                 display: flex;
             }
             #aprasas {
                 flex-basis: 70%;
                 padding-right: 10px;
+                padding-left: 50px;
             }
             .antraste {
                 margin-bottom: 20px;
@@ -322,7 +323,67 @@
                 /* border: 2px solid black; */
                 align-self: center;
                 margin-left: 0.5em;
+                padding: 1em;
+                border-right: 1px solid gray;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
+            .komentaras {
+                font-size: 0.8em;
+            }
+            .nuimtmargintop {
+                margin-top: 0;
+            }
+            .selected {
+                color: green;
+                border-left: 2px solid green;
+                border-top: 1px solid gray;
+                border-bottom: 1px solid gray;
+                border-right: 0;
+            }
+            #callback {
+                padding: 10px;
+                color: white;
+                background-color: rgb(41, 110, 41);
+                background-size: 100px 100px;
+                background-repeat: no-repeat;
+                background-position-x: 70%;
+                position: relative;
+                overflow: hidden;
+                width:80%;
+            }
+            #callback:before {
+                content: "";
+                position: absolute;
+                width: 200%;
+                height: 200%;
+                 top: 70%;
+                left: 30%;
+                z-index: 1;
+                background: url('https://previews.123rf.com/images/kenishirotie/kenishirotie1512/kenishirotie151200019/50330383-wooden-textured-yellow-color-alphabet-j-in-green-background.jpg   ') 0 0 no-repeat;
+                background-size:150px 150px;
+                -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+            }
+            input.custom {
+                padding-left: 0.5em;
+                margin-top: 1em;
+            }
+            .black {
+                background-color: black;
+            }
+            .pabraukt {
+                border-bottom: 2px solid white;
+                width: 2em;
+            }
+
+            #callback div{
+                position:relative;
+                z-index:2;
+            }
+  
         }
     </style>
 </head>
@@ -428,16 +489,41 @@
                     <div id="meniuiraprasas">
                         <div id="meniu">
                             <div>
-                                <div class="meniupunktai">Mobile Fiendly</div>
+                                <div class="meniupunktai nuimtmargintop selected">
+                                    <div>
+                                        <div class="boldtextas">Mobile Fiendly</div>
+                                        <div class="komentaras">Cause mobile matters</div>
+                                    </div>
+                                    <img src="https://image.flaticon.com/icons/svg/126/126490.svg" width="15" height="15" alt="">
+                                </div>
+
                             </div>
                             <div>
-                                <div class="meniupunktai">24/7 Support</div>
+                                <div class="meniupunktai">
+                                    <div>
+                                        <div class="boldtextas">24/7 Support</div>
+                                        <div class="komentaras">When you need it most</div>
+                                    </div>
+                                    <img src="https://image.flaticon.com/icons/svg/126/126490.svg" width="15" height="15" alt="">
+                                </div>
                             </div>
                             <div>
-                                <div class="meniupunktai">Upgrade Assistance</div>
+                                <div class="meniupunktai">
+                                    <div>
+                                        <div class="boldtextas">Upgrade Assistance</div>
+                                        <div class="komentaras">FREE upgrades for life!</div>
+                                    </div>
+                                    <img src="https://image.flaticon.com/icons/svg/126/126490.svg" width="15" height="15" alt="">
+                                </div>
                             </div>
                             <div>
-                                <div class="meniupunktai">99.9% Uptime</div>
+                                <div class="meniupunktai">
+                                    <div>
+                                        <div class="boldtextas">99.9% Uptime</div>
+                                        <div class="komentaras">Rhoncus adipiscing</div>
+                                    </div>
+                                    <img src="https://image.flaticon.com/icons/svg/126/126490.svg" width="15" height="15" alt="">
+                                </div>
                             </div>
                         </div>
                         <div id="aprasas">
@@ -479,6 +565,17 @@
                             <img src="https://image.flaticon.com/icons/svg/25/25694.svg" width="15" height="15" alt="">
                             <p>Sunshine House, Sunville. SUN12 8LU.</p>
                         </div>
+                    </div>
+                    <div id="callback">
+                    
+                            <div class="boldas">REQUEST A CALLBACK</div>
+                            <div class="pabraukt"></div>
+                            <div class="d-flex">
+                                <input placeholder="Your Number" class="custom">
+                                <div class="go black">Go</div>
+                            </div>
+                            <!-- <div class="backgroundas">aaaaaaaaaa</div> -->
+                        
                     </div>
                 </div>
             </div>
@@ -525,8 +622,9 @@
                 <p class="boldas nuimtmargin">NEWSLETTER</p>
                 <p class="line">Stay up to date with our latest news and product releases by signing up to our newsletter.</p>
                 <div class=" d-flex ">
-                    <div id="email">Email</div>
-                    <div id="go">Go!</div>
+                    <!-- <div id="email">Email</div> -->
+                    <input placeholder="Email" id="email">
+                    <div class="go">Go!</div>
                 </div>
             </div>
 

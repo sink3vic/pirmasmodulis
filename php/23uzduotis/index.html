@@ -11,6 +11,8 @@
     <title>23uzduotis</title>
 </head>
 <body>
+
+
     <table>
         <tr>
             <td>Data</td>
@@ -20,12 +22,15 @@
             <td></td>
         </tr>
         <tbody></tbody>
-        <div></div>
+     
     </table>
+    <div></div>
     <script>
+        //kam reikia dėt į jquerry $??
+
         $(function() {
             $.get('lentele.php', function(resp){
-                $('div').text(resp);
+                $('div').text(resp.data);
             });
         });
     </script>

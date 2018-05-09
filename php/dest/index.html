@@ -8,10 +8,26 @@
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+        <style>
+            .modal{
+                position: fixed;
+                left:0; right:0; top:0; bottom:0;
+                background-color: rgba(0,0,0, 0.5);
+                display:flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .modal .content{
+                background-color:white;
+                padding:10px;
+            }
+        </style>
 </head>
 
 <body>
     <div></div>
+    <div class="container">
     <table>
         <thead>
             <tr>
@@ -27,7 +43,15 @@
 
         </tbody>
     </table>
-
+</div>
+    <div class="modal" id="confirm">
+        <div class="content">
+            <p>ar tikrai istrinti</p>
+            <button>ne</button>
+            <button id="confirm-taip">taip</button>
+        </div>
+        
+    </div>
     <script>
         $(function () {
 
