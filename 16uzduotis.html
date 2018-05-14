@@ -163,6 +163,9 @@
         // DVIGUBAS MASYVAS
         // trikrint ar yra div elementas, o ne text
         function dragStart(event) {
+            if(event.target.id == "bokstas1"){
+                document.getElementById("a6").innerHTML = 'red';
+            }
             event.dataTransfer.setData("Text", event.target.id);
             document.getElementById("demo").innerHTML = "Started to drag the p element";
         }
